@@ -1,12 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
-import "./assets/scss/style.scss";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
 import Login from "./components/Login/Login";
 import Verify from "./components/Verify/Verify";
+import "./assets/scss/style.scss";
 
-
-
-function App() {
+function AppRoutes() {
   return (
     <Router>
       <Routes>
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;

@@ -1,0 +1,526 @@
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-BlackItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-BlackItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-BlackItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-BlackItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-BlackItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-BlackItalic.svg#Canela-BlackItalic') format('svg');
+//    font-weight: 900;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BlackItalic.svg#CanelaCondensed-BlackItalic') format('svg');
+//    font-weight: 900;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Bold.eot');
+//    src: url('../fonts/canela_fonts/Canela-Bold.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Bold.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Bold.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Bold.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Bold.svg#Canela-Bold') format('svg');
+//    font-weight: bold;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Black.eot');
+//    src: url('../fonts/canela_fonts/Canela-Black.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Black.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Black.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Black.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Black.svg#Canela-Black') format('svg');
+//    font-weight: 900;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-BoldItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-BoldItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-BoldItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-BoldItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-BoldItalic.svg#Canela-BoldItalic') format('svg');
+//    font-weight: bold;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-LightItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-LightItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-LightItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-LightItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-LightItalic.svg#CanelaCondensed-LightItalic') format('svg');
+//    font-weight: 300;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Black.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Black.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Black.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Black.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Black.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Black.svg#CanelaCondensed-Black') format('svg');
+//    font-weight: 900;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Bold.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Bold.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Bold.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Bold.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Bold.svg#CanelaCondensed-Bold') format('svg');
+//    font-weight: bold;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-MediumItalic.svg#CanelaCondensed-MediumItalic') format('svg');
+//    font-weight: 500;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-BoldItalic.svg#CanelaCondensed-BoldItalic') format('svg');
+//    font-weight: bold;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Light.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Light.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Light.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Light.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Light.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Light.svg#CanelaCondensed-Light') format('svg');
+//    font-weight: 300;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Thin.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Thin.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Thin.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Thin.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Thin.svg#CanelaCondensed-Thin') format('svg');
+//    font-weight: 100;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-LightItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-LightItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-LightItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-LightItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-LightItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-LightItalic.svg#Canela-LightItalic') format('svg');
+//    font-weight: 300;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-ThinItalic.svg#CanelaCondensed-ThinItalic') format('svg');
+//    font-weight: 100;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Medium.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Medium.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Medium.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Medium.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Medium.svg#CanelaCondensed-Medium') format('svg');
+//    font-weight: 500;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Regular.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Regular.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Regular.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Regular.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-Regular.svg#CanelaCondensed-Regular') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela Condensed';
+//    src: url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.eot');
+//    src: url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/CanelaCondensed-RegularItalic.svg#CanelaCondensed-RegularItalic') format('svg');
+//    font-weight: normal;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Medium.eot');
+//    src: url('../fonts/canela_fonts/Canela-Medium.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Medium.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Medium.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Medium.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Medium.svg#Canela-Medium') format('svg');
+//    font-weight: 500;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-MediumItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-MediumItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-MediumItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-MediumItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-MediumItalic.svg#Canela-MediumItalic') format('svg');
+//    font-weight: 500;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-ThinItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-ThinItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-ThinItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-ThinItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-ThinItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-ThinItalic.svg#Canela-ThinItalic') format('svg');
+//    font-weight: 100;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Regular.eot');
+//    src: url('../fonts/canela_fonts/Canela-Regular.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Regular.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Regular.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Regular.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Regular.svg#Canela-Regular') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-RegularItalic.eot');
+//    src: url('../fonts/canela_fonts/Canela-RegularItalic.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-RegularItalic.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-RegularItalic.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-RegularItalic.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-RegularItalic.svg#Canela-RegularItalic') format('svg');
+//    font-weight: normal;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Light.eot');
+//    src: url('../fonts/canela_fonts/Canela-Light.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Light.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Light.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Light.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Light.svg#Canela-Light') format('svg');
+//    font-weight: 300;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'Canela';
+//    src: url('../fonts/canela_fonts/Canela-Thin.eot');
+//    src: url('../fonts/canela_fonts/Canela-Thin.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/canela_fonts/Canela-Thin.woff2') format('woff2'),
+//        url('../fonts/canela_fonts/Canela-Thin.woff') format('woff'),
+//        url('../fonts/canela_fonts/Canela-Thin.ttf') format('truetype'),
+//        url('../fonts/canela_fonts/Canela-Thin.svg#Canela-Thin') format('svg');
+//    font-weight: 100;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//
+//
+//
+//
+//
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Halbfett.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Halbfett.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Halbfett.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Halbfett.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Halbfett.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Halbfett.svg#Sohne-Halbfett') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtrafettKursiv.svg#Sohne-ExtrafettKursiv') format('svg');
+//    font-weight: 900;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-BuchKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-BuchKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-BuchKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-BuchKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-BuchKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-BuchKursiv.svg#Sohne-BuchKursiv') format('svg');
+//    font-weight: normal;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-DreiviertelfettKursiv.svg#Sohne-DreiviertelfettKursiv') format('svg');
+//    font-weight: bold;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Fett.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Fett.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Fett.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Fett.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Fett.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Fett.svg#Sohne-Fett') format('svg');
+//    font-weight: 900;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-ExtraleichtKursiv.svg#Sohne-ExtraleichtKursiv') format('svg');
+//    font-weight: 300;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Buch.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Buch.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Buch.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Buch.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Buch.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Buch.svg#Sohne-Buch') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-FettKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-FettKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-FettKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-FettKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-FettKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-FettKursiv.svg#Sohne-FettKursiv') format('svg');
+//    font-weight: 900;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Extraleicht.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Extraleicht.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Extraleicht.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Extraleicht.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Extraleicht.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Extraleicht.svg#Sohne-Extraleicht') format('svg');
+//    font-weight: 300;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Dreiviertelfett.svg#Sohne-Dreiviertelfett') format('svg');
+//    font-weight: bold;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Extrafett.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Extrafett.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Extrafett.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Extrafett.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Extrafett.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Extrafett.svg#Sohne-Extrafett') format('svg');
+//    font-weight: 900;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Kraftig.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Kraftig.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Kraftig.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Kraftig.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Kraftig.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Kraftig.svg#Sohne-Kraftig') format('svg');
+//    font-weight: 500;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-Leicht.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-Leicht.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-Leicht.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-Leicht.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-Leicht.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-Leicht.svg#Sohne-Leicht') format('svg');
+//    font-weight: 300;
+//    font-style: normal;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-HalbfettKursiv.svg#Sohne-HalbfettKursiv') format('svg');
+//    font-weight: normal;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-LeichtKursiv.svg#Sohne-LeichtKursiv') format('svg');
+//    font-weight: 300;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
+//@font-face {
+//    font-family: 'So:hne';
+//    src: url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.eot');
+//    src: url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.woff2') format('woff2'),
+//        url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.woff') format('woff'),
+//        url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.ttf') format('truetype'),
+//        url('../fonts/testsohne_fonts/Sohne-KraftigKursiv.svg#Sohne-KraftigKursiv') format('svg');
+//    font-weight: 500;
+//    font-style: italic;
+//    font-display: swap;
+//}
+//
