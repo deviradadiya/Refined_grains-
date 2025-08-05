@@ -6,7 +6,7 @@ import Verify from "./components/Verify/Verify";
 
 
 
-function App() {
+function AppRoutes() {
   return (
     <Router>
       <Routes>
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
