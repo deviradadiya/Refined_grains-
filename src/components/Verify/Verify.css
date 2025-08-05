@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.otp-container {
+    height: 500px;
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff8ef;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.otp-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.otp-header p {
+    width: 100%;
+    height: 25px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.logo {
+    height: 28px;
+}
+
+.otp-box h2 {
+    width: 100%;
+    height: 65px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.otp-label {
+    color: #A37C4D;
+    width: 100%;
+    height: 28px;
+    font-weight: 600;
+    font-size: 15 px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.otp-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.otp-text {
+    width: 100%;
+    height: 37px;
+    padding-top: 38px;
+    font-family: Work Sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+.otp-input-group input {
+
+    border: none;
+    border-bottom: 1px solid #A37C4D;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+
+}
+
+.submit-btn {
+
+    width: 100%;
+    height: 74px;
+    background: #A37C4D;
+    color: white;
+    border: none;
+    padding: 12px;
+
+    font-size: 16px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background: #8d6131;
+}
+
+.arrow {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.submit-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.buttons {
+    padding-top: 68px;
+}
