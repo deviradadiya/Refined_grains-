@@ -1,1 +1,46 @@
-    
+.navbar {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    width: 89px;
+    height: 45px;
+    padding: 9px 0px 8px 20px;
+    opacity: 1;
+}
+
+.nav-center {
+
+    padding-left: 19px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 34px;
+}
+
+.nav-item a {
+    color: #2C2C2C;
+}
+
+.btn {
+    width: 146px;
+    height: 47px;
+    border-width: 1px;
+    opacity: 1;
+}
+
+.nav-login-btn button {
+    border-radius: 2px;
+    border-color: #A37C4D;
+}
+
+.nav-login-btn a {
+    text-decoration: none;
+    color: #A37C4D;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
