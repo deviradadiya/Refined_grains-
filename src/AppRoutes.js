@@ -17,9 +17,8 @@ function AppRoutes() {
          <Route path="/" element={<Login />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/home" element={<Home />} />
-          <Route path="/Header" element={<Header />}
-              <Route path="/verify" element={<Verify />} />
-             <Route path="/Header" element={<Header />} />
+          <Route path="/Header" element={<Header />} />
+
       </Routes>
     </Router>
   );
