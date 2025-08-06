@@ -1,12 +1,11 @@
 import {
     BrowserRouter as Router,
     Routes,
-    Route, useLocation, useNavigate,
+    Route,
 } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Verify from "./components/Verify/Verify";
 import Header from "./components/Header/Header";
-
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/About-us/AboutUs";
