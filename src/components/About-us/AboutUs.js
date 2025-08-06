@@ -1,0 +1,109 @@
+import React from "react";
+import GetInTouch from "../Home/GetInTouch";
+import ArrowRightIcon from "../../assets/svg/arrow-right-white.svg";
+import AboutUsImage from "../../assets/images/about-us.png";
+import WhyChooseImage from "../../assets/images/why-choose.png";
+
+const AboutUs = () => {
+  return (
+      <>
+          <div className="about-us pb_100 mt_110 pt_110">
+              <div className="container">
+                  <div className="row align-items-center">
+                      <div className="col-md-6">
+                          <div className="about-content">
+                              <h5 className={'fs_40 fw_700 mb_10 text-color'}>AboutUs</h5>
+                              <h6 className={'fs_20 fw_600 mb_20 text-color'}>From Grain to Greatness — Naturally</h6>
+                              <p className={'fs_20 fw_400 mb_18 text-color lh-1-5'}>
+                                  At Wholesome Flour, we believe that the journey from wheat to flour should be as pure, honest, and nourishing as the final product itself. Our mission is simple — to help you transform your own wheat into fresh, stone-ground, preservative-free flour that's packed with nutrients and full of flavor.
+                              </p>
+
+                              <p className={'fs_20 fw_400 mb_58 text-color lh-1-5'}>
+                                  We’re more than just a service. We’re a movement towards healthier living, sustainable practices, and reviving the age-old tradition of home-ground flour.
+                              </p>
+
+                              <button className={'btn icon btn-solid'}>
+                                  Get Started
+                                  <img src={ArrowRightIcon} alt="arrow icon"/>
+                              </button>
+                          </div>
+                      </div>
+                      <div className="col-md-6">
+                          <div className="img-wrapper text-end">
+                              <img src={AboutUsImage} alt="about us image"/>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="why-choose-us text-start">
+              <div className="container">
+                  <div className="row">
+                      <div className="col-md-5">
+                          <div className="img-wrapper">
+                              <img src={WhyChooseImage} alt="Why Choose Image"/>
+                          </div>
+                      </div>
+
+                      <div className="col-md-7">
+                          <div className="why-chose-us-content ms-auto text-start">
+                              <h5 className={'fs_40 fw_700 text-color mb_20'}>Why Choose Us?</h5>
+
+                              <div className={'mb_20'}>
+                                  <h6 className={'fs_20 fw_500 text-color mb_12'}>🌾 Farm-to-Flour Philosophy:</h6>
+                                  <p className={'fs_20 fw_400 lh-1-5 text-color mb-0'}>100% traceable process. Your wheat, your flour — no mixing or fillers.</p>
+                              </div>
+
+                              <div className={'mb_20'}>
+                                  <h6 className={'fs_20 fw_500 text-color mb_12'}>🌀 State-of-the-Art Milling:</h6>
+                                  <p className={'fs_20 fw_400 lh-1-5 text-color mb-0'}>We use traditional stone grinding combined with modern tech for the best of both worlds.</p>
+                              </div>
+
+                              <div className={'mb_20'}>
+                                  <h6 className={'fs_20 fw_500 text-color mb_12'}>🧼 Clean & Transparent Process:</h6>
+                                  <p className={'fs_20 fw_400 lh-1-5 text-color mb-0'}>No chemicals. No preservatives. Just wholesome, natural goodness.</p>
+                              </div>
+
+                              <div>
+                                  <h6 className={'fs_20 fw_500 text-color mb_12'}>🧑‍🍳 Perfect for All Needs:</h6>
+                                  <p className={'fs_20 fw_400 lh-1-5 text-color mb-0'}>From daily chapatis to gourmet baking — our flour fits every kitchen.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="vision-box mt_100 py_60">
+              <div className="container">
+                  <div className="row">
+                      <div className="col-md-6">
+                          <div className="content pb_48">
+                              <h5 className={'fs_40 fw_700 mb_20 text-white'}>Our Vision</h5>
+                              <p className={'fs_20 fw_400 mb_0 lh-1-5 text-white'}>To reconnect people with the purity of their food by offering access to freshly milled flour that’s healthier, tastier, and more sustainable.</p>
+                          </div>
+                      </div>
+                      <div className="col-md-6">
+                          <div className="content pb_48">
+                              <h5 className={'fs_40 fw_700 mb_20 text-white'}>Our Promise</h5>
+                              <p className={'fs_20 fw_400 mb_0 lh-1-5 text-white'}>We promise integrity in every grain. What you bring is what you get — milled with care, packed with love.</p>
+                          </div>
+                      </div>
+
+                      <div className="col-12">
+                          <div className="content pb_48">
+                              <h5 className={'fs_40 fw_700 mb_20 text-white'}>Let’s Bring Back the Taste of Tradition.</h5>
+                              <p className={'fs_20 fw_400 mb_0 lh-1-5 text-white'}>We promise integrity in every grain. What you bring is what you get — milled with care, packed wWhether you're rediscovering ancestral wisdom or making a modern shift toward clean eating — Wholesome Flour is your trusted partner in every step.ith love.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <GetInTouch />
+      </>
+  );
+};
+
+export default AboutUs;

@@ -238,93 +238,11 @@ img{
     }
 }
 
+.why-choose-us {
+    background-color: $light-coffee;
+    padding: 50px 0;
 
-.footer {
-    .top-footer {
-        padding: 40px 0;
-
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 34px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            li {
-                a {
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 1;
-                    color: $section-title;
-                    text-decoration: none;
-
-                    &.active {
-                        color: $coffee;
-                    }
-                }
-            }
-        }
-        .social-link {
-            ul {
-                gap: 20px;
-
-                li {
-                    a {
-                        background: $light-coffee;
-                        width: 47px;
-                        height: 47px;
-                        border-radius: 30px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
-
-    .bottom-footer {
-        background-color: $light-coffee;
-        padding: 11px 0;
-
-        p {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 100%;
-            letter-spacing: 0;
-            color: rgba($section-title, 0.45);
-        }
-
-        ul {
-            list-style: none;
-            li {
-                a {
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 100%;
-                    letter-spacing: 0;
-                    color: $section-title;
-                    text-decoration: none;
-                }
-
-                + li {
-                    margin-left: 22px;
-                    padding-left: 22px;
-                    position: relative;
-
-                    &:before {
-                        position: absolute;
-                        content: '';
-                        height: 100%;
-                        width: 1px;
-                        top: 0;
-                        left: 0;
-                        background-color: $dark-gray;
-
-                    }
-                }
-            }
-        }
+    .why-chose-us-content {
+        max-width: 700px;
     }
 }
