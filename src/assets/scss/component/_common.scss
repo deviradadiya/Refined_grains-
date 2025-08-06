@@ -7,6 +7,10 @@
     
 }
 
+body {
+    background-color: $theme-primary;
+}
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0px;
 }
@@ -107,8 +111,44 @@ img{
     font-size: $body_12;
 }
 
+.text-color {
+    color: $section-title;
+}
+
+.lh-1-5 {
+    line-height: 1.5;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 526px;
+    margin: 0 auto;
+
+    h5 {
+        font-weight: 700;
+        font-size: $body_40;
+        line-height: 1;
+        letter-spacing: 0;
+        text-transform: capitalize;
+        color: $section-title;
+        margin-bottom: $gap_20;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: $body_20;
+        line-height: 100%;
+        text-transform: capitalize;
+        margin-bottom: $gap_40;
+    }
+
+    &.mx-850 {
+        max-width: 850px;
+    }
+}
 
 
+// Home page UI
 .customize-your-wheat {
     position: relative;
     background-image: url("../../images/our-wheat.png");
@@ -130,5 +170,79 @@ img{
         background: linear-gradient(89.57deg, $black-40 -3.94%, rgba($black-40, 0) 60.47%);
         top: 0;
         left: 0;
+    }
+
+    &.get-in-touch {
+        background-image: url("../../images/get-in-touch.png");
+        padding: 85px 0 85px 70px;
+    }
+}
+
+.how-it-work {
+    .how-it-work-content {
+        max-width: 577px;
+    }
+
+    .work-number {
+        max-width: 65px;
+        min-width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $coffee;
+    }
+
+    .how-work {
+        &:before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 68px;
+            background-repeat: no-repeat;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 85px;
+        }
+
+        &.work-1 {
+            &:before {
+                background-image: url("../../svg/how-work-1.svg");
+            }
+        }
+
+        &.work-2 {
+            &:before {
+                top: 76px;
+                background-image: url("../../svg/how-work-2.svg");
+            }
+        }
+
+        &.work-3 {
+            &:before {
+                top: 80px;
+                background-image: url("../../svg/how-work-3.svg");
+            }
+        }
+    }
+
+}
+
+.how-we-work {
+    .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.why-choose-us {
+    background-color: $light-coffee;
+    padding: 50px 0;
+
+    .why-chose-us-content {
+        max-width: 700px;
     }
 }
