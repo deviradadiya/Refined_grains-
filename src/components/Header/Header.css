@@ -2,11 +2,11 @@
     font-size: 18px;
 }
 
-.navbar-brand {
-    width: 89px;
+.navbar-brand img {
+    width: 85px;
     height: 45px;
-    padding: 9px 0px 8px 20px;
     opacity: 1;
+
 }
 
 .nav-center {
@@ -30,17 +30,22 @@
     opacity: 1;
 }
 
-.nav-login-btn button {
-    border-radius: 2px;
-    border-color: #A37C4D;
+.login-btn {
+    background: transparent;
+    color: #b8860b;
+
+    border-width: 1px;
+    border: 2px solid #b8860b;
+    padding: 12px 42px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.nav-login-btn a {
-    text-decoration: none;
-    color: #A37C4D;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
+.login-btn:hover {
+    background: #b8860b;
+    color: white;
 }
