@@ -7,10 +7,30 @@ import PackagedDeliveredIcon from "../../assets/images/packaged-delivered.png";
 import HowWeWorkIcon from "../../assets/images/how-we-work.png";
 import PlayIcon from "../../assets/images/play-icon.png";
 import GetInTouch from "./GetInTouch";
+import OurProductCarousel from "./OurProductCarousel";
 
 const Home = () => {
   return (
       <>
+          <div className="our-product pb_100">
+              <div className="container-fluid">
+                  <div className="row">
+                      <div className="col-12">
+                          <div className="section-title">
+                              <h5>Our Products</h5>
+                              <p>Select Customise, and convert with precision.</p>
+                          </div>
+                      </div>
+
+                      <div className="col-12">
+                          <div className="product-slider">
+                              <OurProductCarousel />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
           <div className={'customize-your-wheat'}>
             <div className="customize-box">
                 <h2 className={'fs_40 text-white fw_700 mb_20'}>
