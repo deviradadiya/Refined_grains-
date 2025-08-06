@@ -12,7 +12,7 @@ const Header = () => {
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <nav className="navbar navbar-expand-lg bg-white shadow py-2">
+    <nav className="navbar navbar-expand-lg bg-white  py-2">
       <div className="container">
      
         <a className="navbar-brand d-flex align-items-center" href="#">
@@ -70,3 +70,4 @@ const Header = () => {
 };
 
 export default Header;
+ 
