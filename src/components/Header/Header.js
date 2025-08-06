@@ -1,54 +1,72 @@
-import React from 'react'
+import React from "react";
 import "./Header.css";
-import logo from "../../assets/Logo/logo.png"; 
-const Header = () => {
-    return (
-      
-      <div className='main-nav'>
-           <nav className="navbar navbar-expand-lg bg-white shadow-sm py-2">
-    <div className="container d-flex align-items-center">
-      {/* Logo */}
-      <a className="navbar-brand nav-logo" href="#">
-         <img src={logo} alt="Logo" className="header-logo" />
-      </a>
-      {/* Centered Navigation */}
-      <div className="nav-center">
-        <ul className="navbar-nav d-flex flex-row justify-content-around" >
-          <li className="nav-item">
-            <a className="nav-link active" href="#" style={{color:"#A37C4D"}}>
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Shop
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Customise Wheat
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              About Us
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* Login Button */}
-      <div className="nav-login-btn" >
-        <button className="btn btn-login" ><a href=''>LOGIN</a></button>
-      </div>
-    </div>
-  </nav>
-    </div>
-  )
-}
+import logo from "../../assets/Logo/logo.png";
 
-export default Header
+const Header = () => {
+  return (
+   
+    <>
+    
+    <title>Refined Grains</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <nav className="navbar navbar-expand-lg bg-white shadow py-2">
+      <div className="container">
+     
+        <a className="navbar-brand d-flex align-items-center" href="#">
+          <img src={logo} alt="Refined Grains" className="logo" />
+        </a>
+     
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        {/* Menu items */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <a className="nav-link active" href="#" style={{color:"#A37C4D"}}>
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Shop
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Customise Wheat
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                About Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+          {/* Login Button */}
+         <button class="login-btn">LOGIN</button>
+        </div>
+      </div>
+    </nav>
+    </>
+
+  );
+};
+
+export default Header;

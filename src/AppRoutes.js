@@ -6,8 +6,6 @@ import {
 import Login from "./components/Login/Login";
 import Verify from "./components/Verify/Verify";
 import Header from "./components/Header/Header";
-
-import Home from "./components/Home/Home";
 import "./assets/scss/style.scss";
 
 function AppRoutes() {
@@ -16,8 +14,7 @@ function AppRoutes() {
       <Routes>
          <Route path="/" element={<Login />} />
         <Route path="/verify" element={<Verify />} />
-        <Route path="/home" element={<Home />} />
-          <Route path="/Header" element={<Header />} />
+       <Route path="/Header" element={<Header />} />
 
       </Routes>
     </Router>
