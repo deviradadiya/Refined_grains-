@@ -476,3 +476,128 @@ right: 50%;
         display: none;
     }
 }
+
+// Contact us
+.contact{
+    .container{
+        .customize-row{
+
+
+
+.customize-Contact {
+            position: relative;
+            background-image: url("../../images/contact.png");
+            background-size: cover;
+            background-position: center;
+            padding: 90px 70px;
+            display: flex;
+            justify-content: flex-end;
+            width:100%;
+            height: 354px;
+    
+    
+    
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(270deg, // ← This makes the dark side on the right
+                        rgba(0, 0, 0, 0.6) 0%,
+                        rgba(0, 0, 0, 0) 50%);
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+    
+            .customize-box {
+                max-width: 807px;
+                position: relative;
+                z-index: 1;
+                text-align: right;
+    
+    
+            }
+        }
+ .customize-your-talk{
+background-color: $light-coffee;
+           }
+.customize-your-form{
+            .customize-right-col {
+        .customize-form{
+            .customize-form-row{
+                    .customize-form-filed{
+                        input {
+                                border: 1px solid $coffee;
+
+                                &:focus {
+                                    border-color: $coffee !important;
+                                    box-shadow: 0 0 0 0.2rem rgba(163, 124, 77, 0.25);
+                                    outline: none;
+                                }
+                            }
+                        .form-check-input {
+                                                            border: 2px solid $coffee;
+                            
+                                                            &:checked {
+                                                                background-color: $coffee; // Optional: coffee-filled radio
+                                                                border-color: $coffee;
+                                                            }
+                                                        }
+                    }
+                }
+            .customize-your-texture{
+                        .form-check-input {
+                                border: 2px solid $coffee;
+
+                                &:checked {
+                                        background-color: $coffee; // Optional: coffee-filled radio
+                                        border-color: $coffee;
+                                    }
+                            }
+
+            }
+            .customize-your-textarea{
+                textarea {
+                        border: 1px solid $coffee;
+
+                        &:focus {
+                            border-color: $coffee !important;
+                            box-shadow: 0 0 0 0.2rem rgba(163, 124, 77, 0.25);
+                            outline: none;
+                        }
+                    }
+            }
+            .customize-button{
+
+                .submit-btn {
+                        background-color: $coffee;
+                        color: white;
+                        padding: 20px 30px;
+                        height: 50px;
+                        width: 153px;
+                        border-radius: 0%;
+                    }
+            }
+       
+            }
+            }
+           }
+    }
+}
+        
+}   
+
+
+
+
+
+
+
+
+
+    
+
+
+
+   
