@@ -1,0 +1,49 @@
+.sidebar {
+    background-color: $light-coffee;
+    padding: 279px 38px 38px;
+
+    .sidebar-content {
+        position: sticky;
+        top: 140px;
+    }
+
+    .checkbox-list {
+        gap: 18px;
+    }
+}
+
+
+.custom-checkbox {
+    .form-check-input {
+        &[type="checkbox"] {
+            display: grid;
+            place-content: center;
+            border: 1px solid rgba($coffee, 0.3);
+            background-color: $theme-primary;
+            box-shadow: none;
+
+            &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+            }
+
+            &:checked {
+                border: 1px solid $coffee;
+                background-color: $coffee;
+                &:before {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .form-check-label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $section-title;
+    }
+}

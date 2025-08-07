@@ -9,6 +9,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/About-us/AboutUs";
+import Shop from "./components/Shop/Shop";
 import "./assets/scss/style.scss";
 
 function AppLayout() {
@@ -21,6 +22,7 @@ function AppLayout() {
                 <Route path="/verify" element={<Verify />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/shop" element={<Shop />} />
             </Routes>
             <Footer />
 
