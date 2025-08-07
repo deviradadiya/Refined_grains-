@@ -14,8 +14,8 @@ const OurProductCarousel = () => {
       <>
           <Swiper
               modules={[Navigation, Pagination, A11y]}
-              spaceBetween={20}
-              slidesPerView={3} // Show 3 slides at a time
+              spaceBetween={30}
+              slidesPerView={5} // Show 3 slides at a time
               navigation
               pagination={{ clickable: true }}
               loop={true}

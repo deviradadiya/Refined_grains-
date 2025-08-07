@@ -9,6 +9,7 @@ import PlayIcon from "../../assets/images/play-icon.png";
 import GetInTouch from "./GetInTouch";
 import OurProductCarousel from "./OurProductCarousel";
 import Banner from "../Banner/Banner";
+import OurHappyClient from "./OutHappyClient";
 
 const Home = () => {
   return (
@@ -116,6 +117,25 @@ const Home = () => {
                                       <p className={'fs_20 fw_400 text-color mb-0 lh-1-5 text-capitalize'}>Your wholesome, customized flour is then securely packed in eco-friendly packaging and delivered straight to your doorstep—fresh, flavorful, and ready to use.</p>
                                   </div>
                               </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className={'our-happy-client py_50'}>
+              <div className="container">
+                  <div className="row">
+                      <div className="col-12">
+                          <div className="section-title ms-0 text-start mb_50">
+                              <h5>Our Happy Clients</h5>
+                              <p>What Our Customers Say About Their Wholesome Flour Experience</p>
+                          </div>
+                      </div>
+
+                      <div className="col-12">
+                          <div className="our-client-slider">
+                              <OurHappyClient />
                           </div>
                       </div>
                   </div>
