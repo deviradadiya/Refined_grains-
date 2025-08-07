@@ -8,10 +8,12 @@ import HowWeWorkIcon from "../../assets/images/how-we-work.png";
 import PlayIcon from "../../assets/images/play-icon.png";
 import GetInTouch from "./GetInTouch";
 import OurProductCarousel from "./OurProductCarousel";
+import Banner from "../Banner/Banner";
 
 const Home = () => {
   return (
       <>
+          <Banner />
           <div className="our-product pb_100">
               <div className="container-fluid">
                   <div className="row">

@@ -362,50 +362,10 @@ top: 240px;
 right: 50%;
 }
 
-/* product section*/
-.main-product-section{
-    padding-top: 12em;
-}
 
-.product-content h1{
-    color: #2C2C2C;
-    font-size:$body_40;
-    padding-bottom: 20px;
-}
-.product-content p{
-    font-size:$body_20;
-    padding-bottom: 40px;
-}
-.product-section{
-padding: 20px 80px;
-}
-.card-body{
-    width: 244px;
-        height: 125px;
-       background-color:$theme-primary;;
-        border-width: 1px;
-}
-.card-body p{
-    padding-top: 9px;
-  font-size: 13px;
-  padding-bottom: 33px;
-}
-.card{
-    border: none;
-}
-.btn-custom {
-    padding: 20px 30px;
-    /* top-bottom 20px, left-right 30px */
-    font-size: 16px;
-}
-.btn  {
-    font-weight: 400;
-    padding: 20px 30px;
-    font-size:$body_16;
-   color: #ffff;
-   background-color: $coffee;
-}
 
+
+//Vision Box DEsign
 .vision-box {
     position: relative;
     background-color: $coffee;
@@ -432,6 +392,8 @@ padding: 20px 80px;
     }
 }
 
+
+//Our Team Section
 .our-team {
     .team-box {
         text-align: center;
@@ -450,6 +412,8 @@ padding: 20px 80px;
     }
 }
 
+
+//Product Slider Section
 .product-slider {
     .swiper {
         .swiper-wrapper {
