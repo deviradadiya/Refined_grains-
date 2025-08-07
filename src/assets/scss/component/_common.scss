@@ -247,6 +247,165 @@ img{
     }
 }
 
+
+
+/* Banner */
+
+
+
+.main-banner{
+    width: 100%;
+        height: auto;
+
+
+}
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.banner-content {
+    max-width: 500%;
+}
+.banner-content h1 {
+    width: 526px;
+    height: 210px;
+    font-size:$body_40;
+    font-weight: 700;
+    color: #A37C4D;
+
+}
+
+.banner-content p {
+    width: 526px;
+    height: 23px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 70px;
+}
+
+.btn-get-started  {
+    background-color: #A37C4D;
+    color: white;
+    border: none;
+    width: 241px;
+    height: 65px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+
+}
+
+.btn-get-started a {
+    text-decoration: none;
+    color: #ffff;
+}
+.btn-get-started a {
+    text-decoration: none;
+    color: #ffff;
+}
+.banner-image img{
+display: flex;
+justify-content: center;
+align-items: end;
+width:890px;
+height: 650px;
+transform: rotate(11.23deg);
+left: 100%;
+
+}
+
+
+.grains-img img {
+ position: absolute;
+ top:-142px;
+left:-20px;
+transform: rotate(-15deg);
+width: 173px;
+height: auto;
+padding-bottom: 120px;
+}
+.grains-dot{
+   max-width: 300px;
+        height: 300px;
+        transform: rotate(29.90deg);
+        opacity: 1;
+        top: 250px;
+        right: 10%;
+    }
+.arrow-a {
+    font-size: 20px;
+}
+ .dash-border{
+max-width: 600px;
+height: 114px;
+  top:100px;
+  right: 12px;
+ border-width: 2px;
+}
+
+.remove-grains img{
+
+width: 400px;
+height: 200px;
+transform: rotate(9.75deg);
+opacity: 1;
+top: 240px;
+right: 50%;
+}
+
+/* product section*/
+.main-product-section{
+    padding-top: 12em;
+}
+
+.product-content h1{
+    color: #2C2C2C;
+    font-size:$body_40;
+    padding-bottom: 20px;
+}
+.product-content p{
+    font-size:$body_20;
+    padding-bottom: 40px;
+}
+.product-section{
+padding: 20px 80px;
+}
+.card-body{
+    width: 244px;
+        height: 125px;
+       background-color:$theme-primary;;
+        border-width: 1px;
+}
+.card-body p{
+    padding-top: 9px;
+  font-size: 13px;
+  padding-bottom: 33px;
+}
+.card{
+    border: none;
+}
+.btn-custom {
+    padding: 20px 30px;
+    /* top-bottom 20px, left-right 30px */
+    font-size: 16px;
+}
+.btn  {
+    font-weight: 400;
+    padding: 20px 30px;
+    font-size:$body_16;
+   color: #ffff;
+   background-color: $coffee;
+}
+
 .vision-box {
     position: relative;
     background-color: $coffee;

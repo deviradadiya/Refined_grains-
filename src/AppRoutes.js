@@ -8,30 +8,23 @@ import Verify from "./components/Verify/Verify";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
-import AboutUs from "./components/About-us/AboutUs";
+import AboutUs from "./components/About-us/AboutUs"
+import Banner from "./components/Banner/Banner";
 import "./assets/scss/style.scss";
 
-function AppLayout() {
-
-    return (
-        <div>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/verify" element={<Verify />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/about-us" element={<AboutUs />} />
-            </Routes>
-            <Footer />
-
-        </div>
-    );
-}
 
 function AppRoutes() {
   return (
     <Router>
-      <AppLayout />
+      <Routes>
+         <Route path="/" element={<Login />} />
+        <Route path="/verify" element={<Verify />} />
+        <Route path="/Header" element={<Header />} />
+        <Route path="/Header" element={<Home />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Banner" element={<Banner />} />
+              </Routes>
     </Router>
   );
 }
