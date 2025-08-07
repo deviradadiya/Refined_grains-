@@ -1,0 +1,55 @@
+.navbar {
+    background-color: $theme-primary;
+    padding: 33px 0 0 0 !important;
+
+    .nav-background {
+        background-color: $white-8;
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 9px 20px 8px;
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-nav {
+            gap: 34px;
+
+            .nav-item {
+                .nav-link {
+                    padding: 0;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 100%;
+                    letter-spacing: 0;
+                    color: $section-title;
+
+                    &.active {
+                        color: $coffee;
+                    }
+                }
+            }
+        }
+
+        .login-btn {
+            border: 1px solid $coffee;
+            background-color: transparent;
+            padding: 11px 41px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            color: $coffee;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $coffee;
+                color: $white-8;
+            }
+        }
+    }
+}
