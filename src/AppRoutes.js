@@ -11,21 +11,27 @@ import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/About-us/AboutUs";
 import Shop from "./components/Shop/Shop";
 import Contact from "./components/Contact us/Contact";
+import CustomiseWheat from "./components/Customise-wheat/CustomiseWheat";
 import "./assets/scss/style.scss";
+
 
 function AppLayout() {
 
     return (
-        <div>
+        <div className={'main-section'}>
             <Header />
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/verify" element={<Verify />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/about-us" element={<AboutUs />} />
-                <Route path="/shop" element={<Shop />} />
-                 <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <div className={'app-main-section'}>
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                    <Route path="/verify" element={<Verify />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about-us" element={<AboutUs />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/contact-us" element={<Contact />} />
+                    <Route path="/customize-wheat" element={<CustomiseWheat />} />
+                </Routes>
+            </div>
+
             <Footer />
 
         </div>

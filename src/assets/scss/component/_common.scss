@@ -4,11 +4,23 @@
     font-style: normal;
     line-height: normal;
     position: relative;
-    
+
 }
 
 body {
     background-color: $theme-primary !important;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+
+    .app-main-section {
+        flex: 1;
+        padding-top: 150px;
+    }
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -64,7 +76,7 @@ img{
 }
 .fs_42{
     font-size: $body_42;
-} 
+}
 .fs_40{
     font-size: $body_40;
 }
@@ -117,6 +129,10 @@ img{
 
 .lh-1-5 {
     line-height: 1.5;
+}
+
+.lh-2 {
+    line-height: 2;
 }
 
 .section-title {
@@ -608,19 +624,346 @@ background-color: $light-coffee;
            }
     }
 }
-
 }
 
 
+.stepper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar-step {
+    max-width: 300px;
+    min-width: 300px;
+
+    .step-sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 51px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: rgba($coffee, 0.33);
+            top: 0;
+            left: 17px;
+        }
+
+        .sidebar-content {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            .step-count {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 34px;
+                min-width: 34px;
+                height: 34px;
+                border-radius: 50px;
+                background-color: $white-8;
+                color: $section-title;
+                border: 1px solid $coffee;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0;
+                text-transform: capitalize;
+                color: $section-title;
+            }
+        }
+
+        .check-box-icon {
+            min-width: 18px;
+            display: none;
+        }
+
+        &.active,
+        &.completed {
+            .sidebar-content {
+                .step-count {
+                    background-color: $coffee;
+                    color: $white-8;
+                }
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &.completed {
+            .check-box-icon {
+                display: block;
+            }
+
+            &:before {
+                background-color: $coffee;
+            }
+        }
+
+        &:last-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+}
+
+.stepper-content {
+    flex: 1;
+    padding: 42px 0 42px;
+
+    .content-box {
+        background-color: $light-coffee;
+        padding: 30px 30px 100px 30px;
+
+        .choose-your-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 23px;
+
+            .grid-box {
+                background-color: $theme-primary;
+                padding: 18px;
+
+                a {
+                    color: $coffee;
+                }
+
+                .checkbox-lis {
+                    .check-box-div {
+                        padding-bottom: 14px;
+                        border-bottom: 1px solid $light-coffee;
+
+                        + .check-box-div {
+                            margin-top: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .stepper-button-content {
+        background-color: $white-8;
+        padding: 12px 31px 11px 31px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        p {
+            color: rgba($black-40, 0.6);
+        }
+
+        .button {
+            width: 153px;
+            padding: 20px 30px;
+            font-size: 16px;
 
 
+            &.btn-border {
+                background-color: $white-8;
+                color: $coffee;
+            }
+        }
+    }
 
+    .dropdown-list {
+        .list-box {
+            padding-bottom: 14px;
+            border-bottom: 1px solid $light-coffee;
 
+            + .list-box {
+                margin-top: 14px;
+            }
+        }
+    }
 
+    .choose-your-grinding {
+        .title {
+            color: $coffee;
+        }
+        .custom-radio {
+            padding-bottom: 18px;
+            border-bottom: 1px solid $coffee;
+        }
+    }
 
+    .cart-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
+        .cart-grid {
+            .img-wrapper {
+                min-width: 80px;
+                max-width: 80px;
+                height: 80px;
+                margin-right: 23px;
+            }
 
+            .tag-list {
+                gap: 8px;
+                flex-wrap: wrap;
 
+                .tag {
+                    background-color: $theme-primary;
+                    border-radius: 50px;
+                }
+            }
 
+            .action {
+                min-width: 32px;
+                max-width: 32px;
+                height: 32px;
+                border-radius: 50px;
+                background-color: $theme-primary;
+            }
 
+            .delete {
+                min-width: 32px;
+                max-width: 32px;
+                height: 32px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .personal-details {
+        h5 {
+            color: $coffee;
+        }
+    }
+}
+
+.dropdown {
+    .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+        border: 1px solid $coffee;
+        background-color: $white-8;
+        color: $black-40;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 11px 16px;
+        line-height: 1;
+        border-radius: 5px;
+
+        &:after {
+            border: 0;
+            position: absolute;
+            background: url("../../svg/arrow-down.svg");
+            width: 24px;
+            height: 24px;
+            right: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-size: cover;
+        }
+
+        &:active {
+            background-color: $white-8;
+            color: $black-40;
+        }
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        background-color: $white-8;
+        border: 1px solid $coffee;
+        border-radius: 5px;
+        padding: 16px;
+
+        li {
+
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0;
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0;
+                    color: $black-40;
+                    margin: 0;
+                }
+            }
+
+            + li {
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+.form-input {
+    .form-label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+        color: $section-title;
+        margin-bottom: 12px;
+    }
+
+    .form-control {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: $section-title;
+        padding: 15px 24px;
+        border: 1px solid $coffee;
+    }
+}
+
+.tabs-container {
+    .tab-buttons {
+        display: flex;
+        gap: 4px;
+
+        button {
+            padding: 16px 10px;
+            background-color: $theme-primary;
+            font-weight: 600;
+            font-size: 14px;
+            height: 100%;
+            min-width: 142px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: $coffee;
+            border: 0;
+            border-top: 1px solid $theme-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-direction: column;
+            opacity: 0.6;
+
+            &.active {
+                border-top-color: $coffee;
+                color: $section-title;
+                opacity: 1;
+            }
+        }
+
+    }
+}
 

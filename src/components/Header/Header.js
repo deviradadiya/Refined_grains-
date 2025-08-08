@@ -1,8 +1,18 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Header = () => {
+
+  const HeaderMenu = [
+    { name: "Home", path: "/home" },
+    { name: "Shop", path: "/shop" },
+    { name: "Customise Wheat", path: "/customize-wheat" },
+    { name: "About Us", path: "/about-us" },
+    { name: "Contact Us", path: "/contact-us" }
+  ];
+
+
   return (
     <>
     <nav className="navbar navbar-expand-lg p-0 position-fixed w-100 z-3">
@@ -27,31 +37,13 @@ const Header = () => {
           {/* Menu items */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item">
-                <Link className="nav-link active" to={'/home'}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/shop"}>
-                  Shop
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Customise Wheat
-                </a>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/about-us"}>
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact Us
-                </a>
-              </li>
+              {HeaderMenu.map((item, idx) => (
+                  <li className={'nav-item'}>
+                    <NavLink key={idx} to={item.path} className="nav-link">
+                      {item.name}
+                    </NavLink>
+                  </li>
+              ))}
             </ul>
             {/* Login Button */}
             <button className="login-btn">Login</button>
