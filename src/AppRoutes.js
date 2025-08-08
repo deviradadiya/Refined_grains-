@@ -19,7 +19,7 @@ function AppLayout() {
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/userprofile" element={<Userprofile     />} />
+        <Route path="/userprofile" element={<Userprofile />} />
       </Routes>
       <Footer />
     </div>
