@@ -9,8 +9,7 @@ import logout from "../../assets/svg/logout-btn.svg";
 
 import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
-import review from "../../assets/svg/review.svg";
-import { Link } from "react-router-dom";
+
 const UserprofileByAgain = () => {
   return (
     <div className="container-fluid">
