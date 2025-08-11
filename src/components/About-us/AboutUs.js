@@ -11,7 +11,7 @@ import Team4Image from "../../assets/images/team-4.png";
 const AboutUs = () => {
   return (
       <>
-          <div className="about-us pb_100 mt_110 pt_110">
+          <div className="about-us pb_100 pt_100">
               <div className="container">
                   <div className="row align-items-center">
                       <div className="col-md-6">
