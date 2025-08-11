@@ -14,8 +14,8 @@ const Shop = () => {
 
                       <div className={'col-md-9'}>
                         <div className="row g-4">
-                            <div className="col-12 pt_52">
-                                <div className="section-title pt_100">
+                            <div className="col-12">
+                                <div className="section-title pt_42">
                                     <h5>Our Products</h5>
                                     <p>Select Customise, and convert with precision.</p>
                                 </div>

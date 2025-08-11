@@ -7,9 +7,7 @@ const CustomiseWheat = () => {
             <div className="customise-wheat">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
-                            <CustomiseSidebar />
-                        </div>
+                        <CustomiseSidebar />
                     </div>
                 </div>
             </div>

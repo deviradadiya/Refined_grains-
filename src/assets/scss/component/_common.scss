@@ -18,7 +18,7 @@ body {
 
     .app-main-section {
         flex: 1;
-        padding-top: 150px;
+        padding-top: 100px;
     }
 }
 
@@ -166,6 +166,82 @@ img {
     &.mx-850 {
         max-width: 850px;
     }
+}
+
+
+//Custom radio and Checkbox
+.custom-checkbox {
+  .form-check-input {
+    &[type="checkbox"] {
+      display: grid;
+      place-content: center;
+      border: 1px solid rgba($coffee, 0.3);
+      background-color: $theme-primary;
+      box-shadow: none;
+
+      &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+      }
+
+      &:checked {
+        border: 1px solid $coffee;
+        background-color: $coffee;
+        &:before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .form-check-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $section-title;
+  }
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input[type="radio"] {
+    display: grid;
+    place-content: center;
+    border: 1px solid $coffee;
+    background-color: $theme-primary;
+    box-shadow: none;
+    width: 18px;
+    height: 18px;
+
+    &:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em $coffee;
+    }
+
+    &:checked {
+      &:before {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .form-radio-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $section-title;
+  }
 }
 
 // Home page UI
@@ -622,109 +698,6 @@ background-color: $light-coffee;
 .stepper {
     display: flex;
     width: 100%;
-}
-
-.sidebar-step {
-    max-width: 330px;
-    min-width: 330px;
-    padding-right: 16px;
-    position: relative;
-
-    .step-sidebar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding-bottom: 51px;
-        position: relative;
-
-        &:before {
-            position: absolute;
-            content: '';
-            width: 1px;
-            height: 100%;
-            background-color: rgba($coffee, 0.33);
-            top: 0;
-            left: 17px;
-        }
-
-        .sidebar-content {
-            display: flex;
-            align-items: center;
-            gap: 13px;
-
-            .step-count {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                max-width: 34px;
-                min-width: 34px;
-                height: 34px;
-                border-radius: 50px;
-                background-color: $white-8;
-                color: $section-title;
-                border: 1px solid $coffee;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 100%;
-                letter-spacing: 0;
-            }
-
-            span {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 100%;
-                letter-spacing: 0;
-                text-transform: capitalize;
-                color: $section-title;
-            }
-        }
-
-        .check-box-icon {
-            min-width: 18px;
-            display: none;
-        }
-
-        &.active,
-        &.completed {
-            .sidebar-content {
-                .step-count {
-                    background-color: $coffee;
-                    color: $white-8;
-                }
-                span {
-                    font-weight: 600;
-                }
-            }
-        }
-
-        &.completed {
-            .check-box-icon {
-                display: block;
-            }
-
-            &:before {
-                background-color: $coffee;
-            }
-        }
-
-        &:last-child {
-            &:before {
-                display: none;
-            }
-        }
-    }
-
-    &:before {
-        position: fixed;
-        content: '';
-        width: 33vw;
-        height: 100vh;
-        background-color: $light-coffee;
-        left: 0;
-        top: 0;
-    }
-
 }
 
 .stepper-content {
