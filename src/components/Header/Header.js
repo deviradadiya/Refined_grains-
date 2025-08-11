@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import {Link, NavLink} from "react-router-dom";
+import profile from "../../assets/images/profile.jpg";
 
 const Header = () => {
 
@@ -47,15 +48,16 @@ const Header = () => {
             </ul>
             {/* Login Button */}
             <button className="login-btn">Login</button>
+            <div className={'profile-img pl_14'}>
+              <img src={profile} alt="user_profile" className={'user-img'}/>
+            </div>
           </div>
         </div>
 
       </div>
     </nav>
     </>
-
   );
 };
 
 export default Header;
- 

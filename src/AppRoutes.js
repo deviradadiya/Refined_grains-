@@ -1,8 +1,4 @@
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Verify from "./components/Verify/Verify";
 import Header from "./components/Header/Header";
@@ -12,6 +8,7 @@ import AboutUs from "./components/About-us/AboutUs";
 import Shop from "./components/Shop/Shop";
 import Contact from "./components/Contact us/Contact";
 import CustomiseWheat from "./components/Customise-wheat/CustomiseWheat";
+import Userprofile from "./components/User-profile/Userprofile";
 import "./assets/scss/style.scss";
 
 
@@ -29,6 +26,7 @@ function AppLayout() {
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/customize-wheat" element={<CustomiseWheat />} />
+                    <Route path="/user-profile" element={<Userprofile />} />
                 </Routes>
             </div>
 
