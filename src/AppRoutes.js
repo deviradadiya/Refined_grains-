@@ -8,6 +8,7 @@ import AboutUs from "./components/About-us/AboutUs";
 import "./assets/scss/style.scss";
 import Contact from "./components/Contact us/Contact";
 import Userprofile from "./components/User-profile/Userprofile";
+import UserprofileByAgain from "./components/User-profile/UserprofileByAgain";
 
 function AppLayout() {
   return (
@@ -20,6 +21,7 @@ function AppLayout() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/userprofile" element={<Userprofile />} />
+        <Route path="/userprofilebyagain" element={<UserprofileByAgain />} />
       </Routes>
       <Footer />
     </div>
