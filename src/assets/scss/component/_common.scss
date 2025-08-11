@@ -625,6 +625,13 @@ img {
   .custom-main-content {
     width: 75%;
     height: 621px;
+    .custom-tab-content {
+      .custom-tab-nav-content {
+        .nav-link:hover {
+          color: $coffee;
+        }
+      }
+    }
     .custom-search-content {
       .search-container {
         position: relative;
@@ -691,6 +698,7 @@ img {
       .rating-content {
         height: 30px;
         width: 112px;
+        gap: 3.13px;
       }
     }
   }

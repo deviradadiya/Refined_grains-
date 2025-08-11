@@ -99,7 +99,7 @@ const Userprofile = () => {
           <div className="custom-wrapper pl_12">
             {/* Tabs */}
             <div className="custom-tab-content  d-flex justify-content-between pt_74 ">
-              <ul className="custom-tab-content nav mb-3">
+              <ul className="custom-tab-nav-content nav mb-3">
                 <li className="nav-item">
                   <a className="nav-link active" href="#">
                     Orders
@@ -122,6 +122,8 @@ const Userprofile = () => {
                 </li>
               </ul>
             </div>
+            <hr className="my-1 text-black" />
+
             {/* Search + Filter */}
             <div className="custom-search-content pl_14 pt-4 pb_20 d-flex justify-content-between align-items-center mb-3">
               <h2 className="mb-0 fw-600 fs-24 ">Your Orders</h2>
