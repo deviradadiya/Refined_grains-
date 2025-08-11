@@ -158,6 +158,14 @@ img{
         margin-bottom: $gap_40;
     }
 
+    &.chose-quantity {
+        max-width: 550px;
+
+        p {
+            padding: 0 10px;
+        }
+    }
+
     &.mx-850 {
         max-width: 850px;
     }
@@ -633,8 +641,10 @@ background-color: $light-coffee;
 }
 
 .sidebar-step {
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 330px;
+    min-width: 330px;
+    padding-right: 16px;
+    position: relative;
 
     .step-sidebar {
         display: flex;
@@ -721,11 +731,21 @@ background-color: $light-coffee;
         }
     }
 
+    &:before {
+        position: fixed;
+        content: '';
+        width: 33vw;
+        height: 100vh;
+        background-color: $light-coffee;
+        left: 0;
+        top: 0;
+    }
+
 }
 
 .stepper-content {
     flex: 1;
-    padding: 42px 0 42px;
+    padding-left: 42px;
 
     .content-box {
         background-color: $light-coffee;
@@ -840,12 +860,73 @@ background-color: $light-coffee;
                 height: 32px;
                 border-radius: 50px;
             }
+
+            + .cart-grid {
+               margin-top: 24px;
+                padding-top: 24px;
+                border-top: 1px solid rgba($black-40, 0.09);
+            }
         }
     }
 
     .personal-details {
         h5 {
             color: $coffee;
+        }
+    }
+
+    .completion-screen {
+        background-color: $light-coffee;
+        padding: 40px;
+        margin-top: -60px;
+
+        .completion-screen-content {
+            max-width: 558px;
+            margin: 0 auto;
+        }
+        .complete-content {
+            background-color: $white-8;
+            padding: 30px;
+
+            .img-wrapper {
+                max-width: 80px;
+                height: 80px;
+                min-width: 80px;
+                margin-right: 23px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                > div {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+            }
+
+            button {
+                padding: 20px 30px;
+            }
+        }
+
+        .tag-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            .tag {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0;
+                color: $section-title;
+                padding: 10px;
+                border-radius: 50px;
+                background-color: $theme-primary;
+            }
         }
     }
 }
@@ -935,16 +1016,16 @@ background-color: $light-coffee;
 
 .tabs-container {
     .tab-buttons {
-        display: flex;
+        display: grid;
+        grid-template-columns: 142px 142px 142px 142px;
         gap: 4px;
+        margin-bottom: 31px;
 
         button {
             padding: 16px 10px;
             background-color: $theme-primary;
             font-weight: 600;
             font-size: 14px;
-            height: 100%;
-            min-width: 142px;
             line-height: 100%;
             letter-spacing: 0;
             color: $coffee;
