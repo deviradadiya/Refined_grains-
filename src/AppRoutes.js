@@ -26,7 +26,7 @@ function AppLayout() {
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/customize-wheat" element={<CustomiseWheat />} />
-                    <Route path="/user-profile" element={<Userprofile />} />
+                    <Route path="/order" element={<Userprofile />} />
                 </Routes>
             </div>
 
