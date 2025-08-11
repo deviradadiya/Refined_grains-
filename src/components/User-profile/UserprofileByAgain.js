@@ -105,12 +105,7 @@ const UserprofileByAgain = () => {
                   <button>Orders</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <Link
-                    to="/userprofilebyagain"
-                    className="nav-link"
-                    id="profile-tab"
-                    role="tab"
-                  >
+                  <Link className="nav-link" id="profile-tab" role="tab">
                     Buy Again
                   </Link>
                 </li>

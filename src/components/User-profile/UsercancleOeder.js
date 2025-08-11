@@ -10,10 +10,9 @@ import orderbox from "../../assets/svg/orderbox.svg";
 import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
 import review from "../../assets/svg/review.svg";
+import noreview from "../../assets/svg/noreview.svg";
 
-import UserprofileByAgain from "./UserprofileByAgain";
-
-const Userprofile = () => {
+const UsercancleOeder = () => {
   return (
     <div className="container-fluid">
       <div className="main-content row">
@@ -218,7 +217,7 @@ const Userprofile = () => {
                 <hr className="my-3   text-white" />
 
                 {/* Product Row */}
-                <div className="custom-product-content d-flex align-items-start justify-content-start gap-4">
+                <div className="custom-product-content d-flex pt_40 align-items-start justify-content-start gap-4">
                   <img
                     src={grainsuserp}
                     alt="Wheat"
@@ -228,7 +227,7 @@ const Userprofile = () => {
                   />
 
                   {/* Product Info + Badges */}
-                  <div className="custom-product-info-content flex-grow-1">
+                  <div className="custom-product-info-content flex-grow-1 ">
                     <h6 className="fw-bold mb-2">MH Durum Wheat (4KG)</h6>
 
                     <div className="d-flex flex-wrap gap-2 mb-2">
@@ -251,11 +250,9 @@ const Userprofile = () => {
                   </div>
 
                   {/* Rating Section */}
-                  <div className="custom-rating-content w-30 text-end">
-                    <div className="fw-400">You Have Rated 4 Star</div>
-                    <div className="rating-content d-flex align-items-start pt_20 fs-5">
-                      <img src={review} alt="Wheat" className="flex-shrink-0" />
-                    </div>
+                  <div className="custom-rating-content d-flex gap-3 pt_10 text-right">
+                    <div className="fw-400 ">Rate Product</div>
+                    <img src={noreview} alt="Wheat" className="flex-shrink-0" />
                   </div>
                 </div>
               </div>
@@ -267,4 +264,4 @@ const Userprofile = () => {
   );
 };
 
-export default Userprofile;
+export default UsercancleOeder;

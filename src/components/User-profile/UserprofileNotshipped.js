@@ -1,19 +1,17 @@
 import React from "react";
-import profile from "../../assets/images/profile.jpg";
+
 import thomas from "../../assets/images/Thomas.png";
 import arrow from "../../assets/svg/arrow.svg";
 import pside from "../../assets/svg/pside.svg";
 import Payments from "../../assets/svg/payment.svg";
 import Stuff from "../../assets/svg/stuff.svg";
 import logout from "../../assets/svg/logout-btn.svg";
-import orderbox from "../../assets/svg/orderbox.svg";
+
 import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
 import review from "../../assets/svg/review.svg";
-
-import UserprofileByAgain from "./UserprofileByAgain";
-
-const Userprofile = () => {
+import { Link } from "react-router-dom";
+const UserprofileByAgain = () => {
   return (
     <div className="container-fluid">
       <div className="main-content row">
@@ -116,32 +114,6 @@ const Userprofile = () => {
                   <button>Cancelled Orders</button>
                 </li>
               </ul>
-              <div class="tab-content" id="nav-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="nav-home"
-                  role="tabpanel"
-                  aria-labelledby="nav-home-tab"
-                >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="nav-profile"
-                  role="tabpanel"
-                  aria-labelledby="nav-profile-tab"
-                >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="nav-contact"
-                  role="tabpanel"
-                  aria-labelledby="nav-contact-tab"
-                >
-                  ...
-                </div>
-              </div>
             </div>
             <hr className="my-1  text-black" />
 
@@ -159,66 +131,11 @@ const Userprofile = () => {
               </div>
             </div>
 
-            <div className="pl_20">
-              <div class="custom-order-content  d-flex justify-content-between   align-items-center p-3  flex-wrap pb_20">
-                <div class="custom-order-sub-content d-flex align-items-center mb-2 mb-md-0">
-                  <img
-                    src={orderbox}
-                    alt="Order Icon"
-                    width="24"
-                    class="me-2"
-                  />
-                  <span class="order-deliver-content  fw-500 fs_18 text-uppercase">
-                    <h5> 1 ORDER DELIVER</h5>
-                  </span>
-                </div>
-
-                <div className="drop-down-content">
-                  <select class=" form-select form-select-sm w-auto border-0 ">
-                    <option selected>Past 3 Months</option>
-                    <option>2025</option>
-                    <option>2024</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
             {/* Order Card */}
-            <div className="pl_20 pt_20">
+            <div className="pl_20 pt_15">
               <div className="custom-card-content p-4 mb-4 border-0 mt-4 ">
-                <div className="order-summary p-15 d-flex justify-content-between align-items-start">
-                  <div className="order-details  d-flex gap-5">
-                    <div>
-                      <small className="fs_14 d-block">Order Deliver</small>
-                      <p className=" fw-bold fs_18 pt_10 ">26 January 2025</p>
-                    </div>
-
-                    <div>
-                      <small>Total</small>
-                      <p className=" fw-bold fs_18 pt_10">168 Inr</p>
-                    </div>
-                    <div>
-                      <small>Ship To</small>
-                      <p className="fw-bold fs_18 pt_10">Home</p>
-                    </div>
-                  </div>
-                  <div className="order-meta  text-right">
-                    <span className="d-block fs_14">
-                      order # 102-6955251-2562500
-                    </span>
-                    <a
-                      href="#"
-                      className="download-link d-flex justify-content-end fs_14  pt_10"
-                    >
-                      Download Invoice
-                    </a>
-                  </div>
-                </div>
-
-                <hr className="my-3   text-white" />
-
                 {/* Product Row */}
-                <div className="custom-product-content d-flex align-items-start justify-content-start gap-4">
+                <div className="custom-product-content d-flex align-items-start justify-content-start gap-4 pt_20">
                   <img
                     src={grainsuserp}
                     alt="Wheat"
@@ -250,12 +167,8 @@ const Userprofile = () => {
                     </div>
                   </div>
 
-                  {/* Rating Section */}
-                  <div className="custom-rating-content w-30 text-end">
-                    <div className="fw-400">You Have Rated 4 Star</div>
-                    <div className="rating-content d-flex align-items-start pt_20 fs-5">
-                      <img src={review} alt="Wheat" className="flex-shrink-0" />
-                    </div>
+                  <div className="again-btn  text-end">
+                    <a href="#"> Track Order </a>
                   </div>
                 </div>
               </div>
@@ -267,4 +180,4 @@ const Userprofile = () => {
   );
 };
 
-export default Userprofile;
+export default UserprofileByAgain;
