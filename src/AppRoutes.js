@@ -9,10 +9,8 @@ import Shop from "./components/Shop/Shop";
 import Contact from "./components/Contact us/Contact";
 import CustomiseWheat from "./components/Customise-wheat/CustomiseWheat";
 import Userprofile from "./components/User-profile/Userprofile";
-import UserprofileByAgain from "./components/User-profile/UserprofileByAgain";
-import UserprofileNotshipped from "./components/User-profile/UserprofileNotshipped";
-import UsercancleOeder from "./components/User-profile/UsercancleOeder";
 import UserprofileInfo from "./components/User-profile/UserprofileInfo";
+import AccountSetting from "./components/User-profile/AccountSetting/AccountSetting";
 import "./assets/scss/style.scss";
 
 function AppLayout() {
@@ -29,13 +27,8 @@ function AppLayout() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/customize-wheat" element={<CustomiseWheat />} />
           <Route path="/user-profile" element={<Userprofile />} />
-          <Route path="/user-profilebyagain" element={<UserprofileByAgain />} />
-          <Route
-            path="/user-profilenotshipped"
-            element={<UserprofileNotshipped />}
-          />
-          <Route path="/usercancleorder" element={<UsercancleOeder />} />
           <Route path="/userprofileinfo" element={<UserprofileInfo />} />
+          <Route path="/account-setting" element={<AccountSetting />} />
         </Routes>
       </div>
 

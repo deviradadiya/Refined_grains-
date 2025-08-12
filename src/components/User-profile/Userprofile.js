@@ -1,6 +1,8 @@
 import React from "react";
 import ProfileSidebar from "./ProfileSidebar";
-import MyOrder from "./MyOrder";
+import MyOrder from "./Order/MyOrder";
+import AccountSetting from "./AccountSetting/AccountSetting";
+import MyStuff from "./MyStuff/MyStuff";
 
 const Userprofile = () => {
   return (
@@ -12,7 +14,11 @@ const Userprofile = () => {
                 <ProfileSidebar />
               </div>
               <div className="col-md-8">
-                <MyOrder />
+                  <div className={'pt_74'}>
+                      {/*<MyOrder />*/}
+                      {/*<AccountSetting />*/}
+                      <MyStuff />
+                  </div>
               </div>
             </div>
           </div>

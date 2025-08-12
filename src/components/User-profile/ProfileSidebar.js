@@ -7,7 +7,7 @@ import Payments from "../../assets/svg/payment.svg";
 import Stuff from "../../assets/svg/stuff.svg";
 import logout from "../../assets/svg/logout-btn.svg";
 import orderbox from "../../assets/svg/orderbox.svg";
-import grainsuserp from "../../assets/images/grainsusrp .png";
+// import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
 import review from "../../assets/svg/review.svg";
 import {Link, NavLink} from "react-router-dom";
@@ -15,8 +15,8 @@ import {Link, NavLink} from "react-router-dom";
 const ProfileSidebar = () => {
 
   const AccountSetting = [
-    { name: "profile Information", path: "" },
-    { name: "manage Address", path: "" },
+    { name: "profile Information", path: "/account-setting" },
+    { name: "manage Address", path: "/account-setting" },
   ];
 
   const MyStuff = [
@@ -55,7 +55,7 @@ const ProfileSidebar = () => {
             </li>
 
             <li>
-              <NavLink className="nav-link">
+              <NavLink className="nav-link" to={'account-setting'}>
                 <svg width="28" height="28" viewBox="0 0 28 28" stroke="#2C2C2C" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 14.125C1 15.8486 1.33949 17.5553 1.99908 19.1477C2.65867 20.7401 3.62545 22.187 4.84422 23.4058C6.06299 24.6245 7.50988 25.5913 9.10228 26.2509C10.6947 26.9105 12.4014 27.25 14.125 27.25C15.8486 27.25 17.5553 26.9105 19.1477 26.2509C20.7401 25.5913 22.187 24.6245 23.4058 23.4058C24.6245 22.187 25.5913 20.7401 26.2509 19.1477C26.9105 17.5553 27.25 15.8486 27.25 14.125C27.25 12.4014 26.9105 10.6947 26.2509 9.10228C25.5913 7.50988 24.6245 6.06299 23.4058 4.84422C22.187 3.62545 20.7401 2.65867 19.1477 1.99908C17.5553 1.33949 15.8486 1 14.125 1C12.4014 1 10.6947 1.33949 9.10228 1.99908C7.50988 2.65867 6.06299 3.62545 4.84422 4.84422C3.62545 6.06299 2.65867 7.50988 1.99908 9.10228C1.33949 10.6947 1 12.4014 1 14.125Z" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.75 11.208C9.75 12.3683 10.2109 13.4811 11.0314 14.3016C11.8519 15.1221 12.9647 15.583 14.125 15.583C15.2853 15.583 16.3981 15.1221 17.2186 14.3016C18.0391 13.4811 18.5 12.3683 18.5 11.208C18.5 10.0477 18.0391 8.93489 17.2186 8.11442C16.3981 7.29394 15.2853 6.83301 14.125 6.83301C12.9647 6.83301 11.8519 7.29394 11.0314 8.11442C10.2109 8.93489 9.75 10.0477 9.75 11.208Z" stroke-linecap="round" stroke-linejoin="round"/>

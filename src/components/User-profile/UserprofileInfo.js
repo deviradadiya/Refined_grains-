@@ -7,7 +7,7 @@ import Payments from "../../assets/svg/payment.svg";
 import Stuff from "../../assets/svg/stuff.svg";
 import logout from "../../assets/svg/logout-btn.svg";
 
-import grainsuserp from "../../assets/images/grainsusrp .png";
+// import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
 import review from "../../assets/svg/review.svg";
 
