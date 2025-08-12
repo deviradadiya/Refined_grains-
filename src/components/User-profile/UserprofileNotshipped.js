@@ -9,8 +9,7 @@ import logout from "../../assets/svg/logout-btn.svg";
 
 import grainsuserp from "../../assets/images/grainsusrp .png";
 import search from "../../assets/svg/search.svg";
-import review from "../../assets/svg/review.svg";
-import { Link } from "react-router-dom";
+
 const UserprofileByAgain = () => {
   return (
     <div className="container-fluid">
@@ -105,18 +104,14 @@ const UserprofileByAgain = () => {
                   <button>Orders</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <Link className="nav-link" id="profile-tab" role="tab">
-                    Buy Again
-                  </Link>
+                  <button>Buy Again</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <Link to="" className="nav-link" id="profile-tab" role="tab">
-                    Not Yet Shipped
-                  </Link>
+                  <button>Not Yet Shipped</button>
                 </li>
-                <Link to="" className="nav-link" id="profile-tab" role="tab">
-                  Cancelled Orders
-                </Link>
+                <li class="nav-item" role="presentation">
+                  <button>Cancelled Orders</button>
+                </li>
               </ul>
             </div>
             <hr className="my-1  text-black" />
@@ -172,7 +167,7 @@ const UserprofileByAgain = () => {
                   </div>
 
                   <div className="again-btn  text-end">
-                    <a href="#"> Buy Again </a>
+                    <a href="#"> Track Order </a>
                   </div>
                 </div>
               </div>
