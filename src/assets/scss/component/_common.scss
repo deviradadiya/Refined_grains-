@@ -346,107 +346,44 @@ img {
 }
 
 /* Banner */
-
-.main-banner {
-  width: 100%;
-  height: auto;
-}
-.banner {
+.banner-section {
+  padding-bottom: 250px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-}
 
-.banner-content {
-  max-width: 500%;
-}
-.banner-content h1 {
-  width: 526px;
-  height: 210px;
-  font-size: $body_40;
-  font-weight: 700;
-  color: #a37c4d;
-}
+  .banner-content {
+    max-width: 526px;
+    position: relative;
 
-.banner-content p {
-  width: 526px;
-  height: 23px;
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 70px;
-}
+    h1 {
+      font-size: 60px;
+      color: $coffee;
+    }
 
-.btn-get-started {
-  background-color: #a37c4d;
-  color: white;
-  border: none;
-  width: 241px;
-  height: 65px;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  transition: background 0.3s ease;
-}
+    &:after {
+      position: absolute;
+      content: '';
+      background-image: url("../../images/deshborder.png");
+      width: 477px;
+      height: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      bottom: 30px;
+      left: 270px;;
+    }
+  }
 
-.btn-get-started a {
-  text-decoration: none;
-  color: #ffff;
-}
-.btn-get-started a {
-  text-decoration: none;
-  color: #ffff;
-}
-.banner-image img {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  width: 890px;
-  height: 650px;
-  transform: rotate(11.23deg);
-  left: 100%;
-}
+  .img-wrapper {
+    position: absolute;
+    top: -110px;
+  }
 
-.grains-img img {
-  position: absolute;
-  top: -142px;
-  left: -20px;
-  transform: rotate(-15deg);
-  width: 173px;
-  height: auto;
-  padding-bottom: 120px;
-}
-.grains-dot {
-  max-width: 300px;
-  height: 300px;
-  transform: rotate(29.9deg);
-  opacity: 1;
-  top: 250px;
-  right: 10%;
-}
-.arrow-a {
-  font-size: 20px;
-}
-.dash-border {
-  max-width: 600px;
-  height: 114px;
-  top: 100px;
-  right: 12px;
-  border-width: 2px;
-}
-
-.remove-grains img {
-  width: 400px;
-  height: 200px;
-  transform: rotate(9.75deg);
-  opacity: 1;
-  top: 240px;
-  right: 50%;
+  &:after {
+    position: absolute;
+    content: '';
+    background-image: url("../../images/grains.png");
+    width: 176px;
+    height: 259px;
+  }
 }
 
 //Vision Box DEsign

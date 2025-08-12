@@ -16,7 +16,7 @@ const Home = () => {
       <>
           <Banner />
           <div className="our-product pb_100">
-              <div className="container-fluid">
+              <div className="container">
                   <div className="row">
                       <div className="col-12">
                           <div className="section-title">
