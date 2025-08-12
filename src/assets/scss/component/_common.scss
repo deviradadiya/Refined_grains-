@@ -657,7 +657,7 @@ img {
       font-size: 16px;
 
       &.btn-border {
-        background-color: $white-8;
+        background-color: transparent;
         color: $coffee;
       }
     }
@@ -1176,5 +1176,24 @@ img {
     letter-spacing: 0;
     text-transform: uppercase;
     color: $coffee;
+  }
+}
+
+.shop-filter {
+  background-color: $white-8;
+  padding: 29px 15px;
+
+  > div {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 }

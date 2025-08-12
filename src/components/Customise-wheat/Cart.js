@@ -13,18 +13,18 @@ const Cart = () => {
       <div>
           <div className="section-title">
               <h5>Your Cart</h5>
-              <p>Review Your ouder</p>
+              <p>Review Your order</p>
           </div>
 
           <div className={'content-box'}>
               <div className="cart-list">
-                  <div className="cart-grid d-flex align-items-center justify-content-between gap-2">
+                  <div className="cart-grid d-flex align-items-lg-center justify-content-between gap-2">
                       <div className={'d-flex align-items-center'}>
                           <div className="img-wrapper">
                               <img className={'img-fluid'} src={CartProductIcon} alt="cart product"/>
                           </div>
                           <div>
-                              <div className={'d-flex align-items-end gap-2 mb_10'}>
+                              <div className={'d-flex align-items-end gap-2 mb_10 cart-title'}>
                                   <h6 className={'fs_24 fw_700 text-color mb-0'}>MH Durum wheat (4KG)</h6>
                                   <p className={'fs_14 fw_500 text-color mb-0'}>Exc Delivery Date: 1 July, 2025</p>
                               </div>
@@ -39,7 +39,7 @@ const Cart = () => {
                           </div>
                       </div>
 
-                      <div className={'d-flex align-items-center gap-2'}>
+                      <div className={'d-flex align-items-center gap-2 cart-total'}>
                           <p className={'fs_20 fw_700 text-black'}>₹ 168</p>
 
                           <div className={'d-flex align-items-center gap-3'}>
@@ -58,13 +58,13 @@ const Cart = () => {
                       </div>
                   </div>
 
-                  <div className="cart-grid d-flex align-items-center justify-content-between gap-2">
-                      <div className={'d-flex align-items-center'}>
+                  <div className="cart-grid d-flex align-items-lg-center justify-content-between gap-2">
+                      <div className={'d-flex align-items-start '}>
                           <div className="img-wrapper">
                               <img className={'img-fluid'} src={CartProductIcon} alt="cart product"/>
                           </div>
                           <div>
-                              <div className={'d-flex align-items-end gap-2 mb_10'}>
+                              <div className={'d-flex align-items-end gap-2 mb_10 cart-title'}>
                                   <h6 className={'fs_24 fw_700 text-color mb-0'}>MH Durum wheat (4KG)</h6>
                                   <p className={'fs_14 fw_500 text-color mb-0'}>Exc Delivery Date: 1 July, 2025</p>
                               </div>
@@ -79,7 +79,7 @@ const Cart = () => {
                           </div>
                       </div>
 
-                      <div className={'d-flex align-items-center gap-2'}>
+                      <div className={'d-flex align-items-center gap-2 cart-total'}>
                           <p className={'fs_20 fw_700 text-black'}>₹ 168</p>
 
                           <div className={'d-flex align-items-center gap-3'}>
