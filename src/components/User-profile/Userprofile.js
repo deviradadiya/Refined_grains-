@@ -3,6 +3,7 @@ import ProfileSidebar from "./ProfileSidebar";
 import MyOrder from "./Order/MyOrder";
 import AccountSetting from "./AccountSetting/AccountSetting";
 import MyStuff from "./MyStuff/MyStuff";
+import UserPayment from "./Payment/UserPayment";
 
 const Userprofile = () => {
   return (
@@ -16,7 +17,8 @@ const Userprofile = () => {
               <div className="col-md-8">
                   <div className={'pt_74'}>
                       {/*<MyOrder />*/}
-                      <AccountSetting />
+                      {/*<AccountSetting />*/}
+                      <UserPayment />
                       {/*<MyStuff />*/}
                   </div>
               </div>

@@ -1146,3 +1146,32 @@ img {
 
   }
 }
+
+.user-card-grid {
+  max-width: 410px;
+
+  .user-card {
+    padding-bottom: 33px;
+    border-bottom: 1px solid $white-100;
+    margin-bottom: 28px;
+    p {
+      color: #666666;
+    }
+
+    h6 {
+      color: $coffee;
+    }
+  }
+
+  .add-new {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $coffee;
+  }
+}
