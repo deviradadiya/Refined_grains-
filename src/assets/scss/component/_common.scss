@@ -863,28 +863,6 @@ img {
     }
   }
 }
-.custom-sidebar {
-  .img-container {
-    display: flex;
-    width: 100%;
-    height: 50px;
-
-    .avtar-content {
-      color: #2c2c2c;
-      font-size: 16px;
-      line-height: 25px;
-      text-transform: capitalize;
-      width: 171px;
-      height: 41px;
-    }
-  }
-  .nav-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: #2c2c2c;
-  }
-}
 
 .search-field {
   position: relative;
@@ -909,111 +887,6 @@ img {
     right: 15px;
     transform: translateY(-50%);
   }
-}
-
-// User-profile section
-.container-fluid {
-  .main-content {
-    width: 100%;
-  }
-
-  .custom-main-content {
-    width: 75%;
-    height: 621px;
-    .custom-tab-content {
-      .custom-tab-nav-content {
-        .nav-link:hover {
-          color: $coffee;
-        }
-      }
-    }
-    .custom-search-content {
-      .search-container {
-        position: relative;
-        width: 350px;
-      }
-      .search-container input {
-        height: 50px;
-        width: 100%;
-        padding: 10px 40px 10px 15px;
-        border: 1px solid #d9d9d9;
-        color: #2c2c2c;
-        background-color: #fdf7e9;
-        font-weight: 300;
-        outline: none;
-      }
-      .search-container .search-icon {
-        color: #2c2c2c;
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        pointer-events: none;
-      }
-    }
-    .custom-order-content {
-      background-color: $light-coffee;
-      .custom-order-sub-content img {
-        width: 32px;
-        height: 32px;
-      }
-      .drop-down-content {
-        background-color: $light-coffee;
-      }
-    }
-
-    .custom-card-content {
-      background-color: $light-coffee;
-
-      .order-details small {
-        .order-details p {
-          .order-meta {
-            .order-meta span {
-              .download-link {
-                color: $coffee;
-              }
-
-              .download-link:hover {
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .custom-product-info-content {
-      span {
-        background-color: #fdf7e7;
-      }
-    }
-    .custom-rating-content {
-      .rating-content {
-        height: 30px;
-        width: 112px;
-        gap: 3.13px;
-      }
-    }
-  }
-}
-
-//User-profile-by-again
-.custom-card-content {
-  width: 100%;
-  height: 386px;
-
-  background-color: $light-coffee;
-}
-.again-btn {
-  padding: 10px 20px;
-
-  background-color: $coffee;
-}
-.again-btn a {
-  text-decoration: none;
-  color: #ffff;
 }
 
 .profile-tabs-button {
@@ -1054,69 +927,24 @@ img {
 
 }
 
-//user infomation
-.container-fluid {
-  .main-content {
-    width: 100%;
-    .custom-sidebar {
-      background-color: $light-coffee;
-      width: 25%;
-      height: auto;
-    }
-    .custom-main-content {
-      width: 75%;
-      height: 621px;
-    }
-  }
-}
-main {
-  .profile-container {
-    .form-control,
-    .profile-container .form-select,
-    .profile-container textarea {
-      border: 1px solid $coffee; /* coffee brown */
-      box-shadow: none;
-    }
-    form {
-      .form-label {
-        .required {
-          color: red;
-        }
-      }
-      .form-actions {
-        .btn-cancel {
-          background-color: transparent;
-          color: $coffee;
-          border: 1px solid $coffee;
-          padding: 8px 20px;
-
-          text-transform: uppercase;
-          .btn-cancel:hover {
-            background-color: $coffee;
-            color: #fff;
-          }
-        }
-
-        /* Save button */
-        .btn-save {
-          background-color: $coffee;
-          color: #fff;
-          border: none;
-          padding: 8px 20px;
-
-          text-transform: uppercase;
-          .btn-save:hover {
-            background-color: $light-coffee;
-          }
-        }
-      }
-    }
-  }
-}
 
 .main-content {
   .order-box {
     background-color: $light-coffee;
+  }
+
+  .button {
+    min-width: 150px;
+    font-size: 16px;
+    padding: 16px 30px;
+
+    &.btn-border {
+      background-color: transparent;
+    }
+
+    &.btn-solid {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -1209,93 +1037,6 @@ main {
     border-top: 1px solid rgba($black-40, 0.09);
   }
 }
-//user manage address
-.profile-info-container {
-  width: 770px;
-  height: 149px;
-  .address-card {
-    background-color: #f9f2e4;
-    padding: 1rem;
-
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-
-    .radio-wrapper {
-      position: relative;
-      margin-right: 12px;
-      margin-top: 5px;
-    }
-    .radio-wrapper input[type="radio"] {
-      appearance: none;
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      border: 2px solid $coffee;
-      border-radius: 50%;
-      background-color: transparent;
-      cursor: pointer;
-      position: relative;
-    }
-    .radio-wrapper input[type="radio"]:checked::before {
-      content: "";
-      position: absolute;
-      top: 1.5px;
-      left: 1px;
-      width: 12px;
-      height: 12px;
-      background-color: #a46d3c;
-      border-radius: 50%;
-    }
-  }
-
-  .address-content {
-    flex: 1;
-
-    .name {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .tag.home {
-      color: green;
-      border: 1px solid green;
-      border-radius: 0;
-      padding: 3px 10px;
-    }
-    .user-content-address {
-      opacity: 60%;
-      color: #2c2c2c;
-      text-transform: capitalize;
-    }
-    .user-content-mobile {
-      opacity: 60%;
-      color: #2c2c2c;
-      text-transform: capitalize;
-    }
-    .note {
-      color: #2c2c2c;
-      opacity: 60%;
-    }
-  }
-  .actions {
-    .remove-btn,
-    .edit-btn {
-      text-decoration: none;
-    }
-  }
-  .add-address a {
-    color: #b27a35;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .add-address a:hover {
-    text-decoration: underline;
-  }
-}
-
 //user cards
 
 .card-container {
@@ -1361,5 +1102,47 @@ main {
 
   .add-card a:hover {
     text-decoration: underline;
+  }
+}
+
+
+.address-list {
+  .list-grid {
+    background-color: $light-coffee;
+    padding: 20px;
+
+    .tag {
+      color: $green;
+      padding: 3px 10px;
+      border: 1px solid $green;
+    }
+
+    p {
+      opacity: 0.6;
+    }
+
+    ul {
+      margin: 0;
+      opacity: 0.6;
+    }
+
+    + .list-grid {
+      margin-top: 28px;
+    }
+  }
+
+  .add-new {
+    margin-left: 20px;
+    margin-top: 28px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $coffee;
+
   }
 }

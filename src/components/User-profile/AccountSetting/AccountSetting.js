@@ -1,18 +1,15 @@
 import React, {useState} from "react";
 import Order from "../Order/Order";
-// import ByAgain from "./ByAgain";
-// import NotShipped from "./NotShipped";
-// import CancelOrder from "./CancelOrder";
+import ProfileInformation from "./ProfileInformation";
+import ManageAddress from "./ManageAddress";
 
 const AccountSetting = () => {
 
-  const [activeTab, setActiveTab] = useState('orders');
+  const [activeTab, setActiveTab] = useState('profile-info');
 
   const tabs = [
-    { id: 'orders', label: 'Orders'},
-    { id: 'buy-again', label: 'Buy Again' },
-    { id: 'not-at-shipped', label: 'Not Yet Shipped'},
-    { id: 'cancelled-order', label: 'Cancelled Orders'},
+    { id: 'profile-info', label: 'profile Information'},
+    { id: 'manage-address', label: 'Manage Address'},
   ];
 
   return (
@@ -30,18 +27,12 @@ const AccountSetting = () => {
           </div>
 
           <div className="tab-content">
-            {activeTab === 'orders' && (
-                <Order />
+            {activeTab === 'profile-info' && (
+                <ProfileInformation />
             )}
-            {/*{activeTab === 'buy-again' && (*/}
-            {/*    <ByAgain />*/}
-            {/*)}*/}
-            {/*{activeTab === 'not-at-shipped' && (*/}
-            {/*    <NotShipped />*/}
-            {/*)}*/}
-            {/*{activeTab === 'cancelled-order' && (*/}
-            {/*    <CancelOrder />*/}
-            {/*)}*/}
+            {activeTab === 'manage-address' && (
+                <ManageAddress />
+            )}
           </div>
         </div>
 

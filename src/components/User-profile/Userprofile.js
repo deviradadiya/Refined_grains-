@@ -16,8 +16,8 @@ const Userprofile = () => {
               <div className="col-md-8">
                   <div className={'pt_74'}>
                       {/*<MyOrder />*/}
-                      {/*<AccountSetting />*/}
-                      <MyStuff />
+                      <AccountSetting />
+                      {/*<MyStuff />*/}
                   </div>
               </div>
             </div>
