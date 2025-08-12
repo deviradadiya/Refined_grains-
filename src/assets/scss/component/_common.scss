@@ -864,7 +864,6 @@ img {
   }
 }
 .custom-sidebar {
-
   .img-container {
     display: flex;
     width: 100%;
@@ -1208,5 +1207,159 @@ main {
     margin-top: 24px;
     padding-top: 24px;
     border-top: 1px solid rgba($black-40, 0.09);
+  }
+}
+//user manage address
+.profile-info-container {
+  width: 770px;
+  height: 149px;
+  .address-card {
+    background-color: #f9f2e4;
+    padding: 1rem;
+
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .radio-wrapper {
+      position: relative;
+      margin-right: 12px;
+      margin-top: 5px;
+    }
+    .radio-wrapper input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $coffee;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+    }
+    .radio-wrapper input[type="radio"]:checked::before {
+      content: "";
+      position: absolute;
+      top: 1.5px;
+      left: 1px;
+      width: 12px;
+      height: 12px;
+      background-color: #a46d3c;
+      border-radius: 50%;
+    }
+  }
+
+  .address-content {
+    flex: 1;
+
+    .name {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .tag.home {
+      color: green;
+      border: 1px solid green;
+      border-radius: 0;
+      padding: 3px 10px;
+    }
+    .user-content-address {
+      opacity: 60%;
+      color: #2c2c2c;
+      text-transform: capitalize;
+    }
+    .user-content-mobile {
+      opacity: 60%;
+      color: #2c2c2c;
+      text-transform: capitalize;
+    }
+    .note {
+      color: #2c2c2c;
+      opacity: 60%;
+    }
+  }
+  .actions {
+    .remove-btn,
+    .edit-btn {
+      text-decoration: none;
+    }
+  }
+  .add-address a {
+    color: #b27a35;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .add-address a:hover {
+    text-decoration: underline;
+  }
+}
+
+//user cards
+
+.card-container {
+  width: 430px;
+  height: 81px;
+
+  .card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    .radio-wrapper {
+      margin-right: 12px;
+      position: relative;
+    }
+    .radio-wrapper input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #a46d3c;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+    }
+    .radio-wrapper input[type="radio"]:checked::before {
+      content: "";
+      position: absolute;
+      top: 1.5px;
+      left: 1px;
+      width: 12px;
+      height: 12px;
+      background-color: #a46d3c;
+      border-radius: 50%;
+    }
+    .card-info {
+      flex-grow: 1;
+      line-height: 1.4;
+      .card-number {
+        color: #666666;
+      }
+    }
+
+    .edit-link {
+      color: #a46d3c;
+      text-decoration: none;
+    }
+
+    .edit-link:hover {
+      text-decoration: underline;
+    }
+  }
+  .add-card {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .add-card a {
+    color: #a46d3c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .add-card a:hover {
+    text-decoration: underline;
   }
 }

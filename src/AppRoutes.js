@@ -11,6 +11,8 @@ import CustomiseWheat from "./components/Customise-wheat/CustomiseWheat";
 import Userprofile from "./components/User-profile/Userprofile";
 import UserprofileInfo from "./components/User-profile/UserprofileInfo";
 import AccountSetting from "./components/User-profile/AccountSetting/AccountSetting";
+import UsermanageAddress from "./components/User-profile/UsermanageAddress";
+import UserCards from "./components/User-profile/UserCards";
 import "./assets/scss/style.scss";
 
 function AppLayout() {
@@ -29,6 +31,8 @@ function AppLayout() {
           <Route path="/user-profile" element={<Userprofile />} />
           <Route path="/userprofileinfo" element={<UserprofileInfo />} />
           <Route path="/account-setting" element={<AccountSetting />} />
+          <Route path="/usermanageaddress" element={<UsermanageAddress />} />
+          <Route path="/userCards" element={<UserCards />} />
         </Routes>
       </div>
 
