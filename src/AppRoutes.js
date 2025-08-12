@@ -13,6 +13,8 @@ import UserprofileByAgain from "./components/User-profile/UserprofileByAgain";
 import UserprofileNotshipped from "./components/User-profile/UserprofileNotshipped";
 import UsercancleOeder from "./components/User-profile/UsercancleOeder";
 import UserprofileInfo from "./components/User-profile/UserprofileInfo";
+import UsermanageAddress from "./components/User-profile/UsermanageAddress";
+import UserCards from "./components/User-profile/UserCards";
 import "./assets/scss/style.scss";
 
 function AppLayout() {
@@ -36,6 +38,8 @@ function AppLayout() {
           />
           <Route path="/usercancleorder" element={<UsercancleOeder />} />
           <Route path="/userprofileinfo" element={<UserprofileInfo />} />
+          <Route path="/usermanageaddress" element={<UsermanageAddress />} />
+          <Route path="/userCards" element={<UserCards />} />
         </Routes>
       </div>
 
