@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className={'d-flex align-items-center justify-content-between gap-3 top-footer'}>
+                <div className={'d-flex align-items-lg-center justify-content-between gap-3 top-footer'}>
                   <ul>
                     <li>
                       <a href="#" className={'active'}>Home</a>

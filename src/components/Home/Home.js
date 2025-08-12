@@ -56,7 +56,7 @@ const Home = () => {
 
                       <div className="col-md-12">
                           <div className={'d-flex pb_100 work-1 how-work position-relative'}>
-                              <div className="how-it-work text-end pb_100 d-flex justify-content-end">
+                              <div className="how-it-work text-end pb_100 d-flex justify-content-lg-end">
                                   <div className={'how-it-work-content'}>
                                       <h5 className={'fs_24 fw_700 mb_38 text-color pt_20'}>Choose Your Wheat</h5>
                                       <p className={'fs_20 fw_400 text-color mb-0 lh-1-5 text-capitalize'}>Start by selecting from a variety of high-quality wheat types—such as Sharbati, Lokwan, or MP Wheat—based on your taste, texture preference, and nutritional needs. Each variety offers a unique flavor and health benefit.</p>
@@ -104,7 +104,7 @@ const Home = () => {
                           </div>
                       </div>
                       <div className="col-md-12">
-                          <div className={'d-flex justify-content-end'}>
+                          <div className={'d-flex how-work justify-content-end'}>
                               <div className="how-it-work-img mr_36">
                                   <img className={'img-fluid'} src={PackagedDeliveredIcon} alt="Packaged Delivered Icon"/>
                               </div>

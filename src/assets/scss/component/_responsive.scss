@@ -1,0 +1,280 @@
+@media (max-width: 1400px) {
+  .banner-section {
+    .banner-content {
+      h1 {
+        font-size: 50px;
+      }
+
+      &:after {
+        height: 100px;
+      }
+    }
+  }
+
+  .how-it-work {
+    padding-bottom: 70px;
+
+    .how-it-work-content {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .how-it-work {
+    padding-bottom: 50px;
+
+    .how-it-work-content {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-section {
+    padding-bottom: 150px;
+
+    .banner-content {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 30px;
+      }
+
+      .button {
+        padding: 15px 20px;
+        font-size: 16px;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .img-wrapper {
+      position: unset;
+    }
+  }
+
+  .how-work {
+    flex-direction: column;
+    padding-bottom: 0;
+
+      .how-it-work {
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        .work-number {
+          margin: 0;
+          max-width: 50px;
+          min-width: 50px;
+          height: 50px;
+
+          span {
+            font-size: 35px;
+          }
+        }
+
+        .how-it-work-content {
+          order: 2;
+          text-align: center;
+          max-width: 100%;
+
+          h5 {
+            margin-bottom: 18px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+    .how-it-work-img {
+      text-align: center;
+      margin: 0;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .customize-your-wheat {
+    h2 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    .top-footer {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: unset !important;
+    background-color: $white-8;
+  }
+  .main-section {
+    .app-main-section {
+      padding-top: 0;
+    }
+  }
+  .banner-section {
+    padding-bottom: 20px;
+
+    .banner-content {
+      padding-top: 25px;
+    }
+
+    .img-wrapper {
+      margin-right: -100px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-top: -150px;
+      z-index: -1;
+      position: relative;
+      top: unset;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .section-title {
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .how-work {
+    .how-it-work {
+      .work-number {
+        max-width: 39px;
+        min-width: 39px;
+        height: 39px;
+
+        span {
+          font-size: 28px;
+        }
+      }
+
+      .how-it-work-content {
+        order: 2;
+        text-align: center;
+        max-width: 100%;
+
+        h5 {
+          margin-bottom: 18px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .how-it-work {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .section-title {
+      padding-bottom: 0;
+    }
+  }
+
+  .customize-your-wheat {
+    padding: 29px 16px;
+    overflow: hidden;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &:after {
+      min-width: 636px;
+    }
+  }
+
+  .footer {
+    .top-footer {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        flex: 1;
+        width: 100%;
+      }
+
+      .social-link {
+        ul {
+          display: flex;
+          gap: 18px;
+
+          li {
+            a {
+              width: 33px;
+              height: 33px;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .banner-section {
+    .img-wrapper {
+      margin-top: -100px;
+    }
+  }
+
+  .how-it-work {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer {
+    .bottom-footer {
+      background-color: transparent;
+      padding: 0;
+
+       div {
+        flex-direction: column;
+
+         p {
+           order: 2;
+         }
+      }
+
+      ul {
+        background-color: $light-coffee;
+        padding: 11px !important;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}

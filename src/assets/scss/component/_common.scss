@@ -139,7 +139,7 @@ img {
 
   h5 {
     font-weight: 700;
-    font-size: $body_40;
+    font-size: calc(28px + 40 * (100vw - 375px) / 1620);
     line-height: 1;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -349,6 +349,7 @@ img {
 .banner-section {
   padding-bottom: 250px;
   position: relative;
+  overflow: hidden;
 
   .banner-content {
     max-width: 526px;
@@ -383,6 +384,8 @@ img {
     background-image: url("../../images/grains.png");
     width: 176px;
     height: 259px;
+    bottom: 0;
+    z-index: -1;
   }
 }
 

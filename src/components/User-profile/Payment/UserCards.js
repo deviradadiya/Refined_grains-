@@ -1,5 +1,4 @@
 import React from "react";
-import cardlogo from "../../../assets/svg/cardlogo.svg";
 import CardIcon from "../../../assets/svg/cardlogo.svg";
 
 const UserCards = () => {
