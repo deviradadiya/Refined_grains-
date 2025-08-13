@@ -10,7 +10,7 @@ const MyReviews = () => {
   return (
       <>
         <div className="main-content">
-          <div className="d-flex align-items-center justify-content-between mb_28">
+            <div className="d-flex align-items-center justify-content-between mb_28 stuff-title-order">
             <h2 className="mb-0 fw_600 fs_24 lh-1">Reviews (1)</h2>
             <div className={'form-input search-field'}>
               <input type="text" className="form-control" id="search" placeholder="Search Your Order" />

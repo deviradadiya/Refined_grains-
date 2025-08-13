@@ -8,8 +8,10 @@ const CancelOrder = () => {
   return (
       <>
         <div className="main-content">
-          <div className="d-flex align-items-center justify-content-between mb_28">
-            <h2 className="mb-0 fw_600 fs_24 lh-1">Your Orders</h2>
+          <div className="d-flex align-items-center justify-content-between mb_28 order-content-box">
+            <div>
+              <h2 className="mb-0 fw_600 fs_24 lh-1">Your Orders</h2>
+            </div>
             <div className={'form-input search-field'}>
               <input type="text" className="form-control" id="search" placeholder="Search Your Order" />
               <img src={search} alt="Search" className="search-icon"/>
@@ -31,7 +33,7 @@ const CancelOrder = () => {
           </div>
           <div className={'order-list-box'}>
             <div className="order-invoice d-flex align-items-center justify-content-between gap-2 mb_30">
-              <div className={'d-flex align-items-center'}>
+              <div className={'d-flex align-items-center delivery-details'}>
                 <div className={'order-name'}>
                   <p className={'fs_14 fw_400 lh-1 text-color mb_10'}>Order Deliver</p>
                   <h6 className={'fs_18 fw_500 lh-1 text-color mb-0'}>26 january 2025</h6>
@@ -57,7 +59,7 @@ const CancelOrder = () => {
             <div className="order-grid-list">
 
               <div className="cart-grid d-flex align-items-center justify-content-between gap-2">
-                <div className={'d-flex align-items-center'}>
+                <div className={'d-flex align-items-start'}>
                   <div className="img-wrapper">
                     <img className={'img-fluid'} src={CartProductIcon} alt="cart product"/>
                   </div>

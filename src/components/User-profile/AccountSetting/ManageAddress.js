@@ -30,12 +30,12 @@ const ManageAddress = () => {
                 </ul>
               </div>
             </div>
-            <div className={'d-flex align-items-center'}>
-              <div className={'text-black fs_14 fw_500 text-uppercase mr_28'}>
+            <div className={'d-flex align-items-center action-icon'}>
+              <div className={'text-black fs_14 fw_500 text-uppercase mr_28 text-no-wrap'}>
                 <img className={'img-fluid mr_10'} src={DeleteIcon} alt="delete icon"/>
                 Remove</div>
 
-              <div className={'text-black fs_14 fw_500 text-uppercase'}>
+              <div className={'text-black fs_14 fw_500 text-uppercase text-no-wrap'}>
                 <img className={'img-fluid mr_10'} src={EditIcon} alt="delete icon"/>
                 Edit</div>
             </div>
@@ -59,12 +59,12 @@ const ManageAddress = () => {
                 </ul>
               </div>
             </div>
-            <div className={'d-flex align-items-center'}>
-              <div className={'text-black fs_14 fw_500 text-uppercase mr_28'}>
+            <div className={'d-flex align-items-center action-icon'}>
+              <div className={'text-black fs_14 fw_500 text-uppercase mr_28 text-no-wrap'}>
                 <img className={'img-fluid mr_10'} src={DeleteIcon} alt="delete icon"/>
                 Remove</div>
 
-              <div className={'text-black fs_14 fw_500 text-uppercase'}>
+              <div className={'text-black fs_14 fw_500 text-uppercase text-no-wrap'}>
                 <img className={'img-fluid mr_10'} src={EditIcon} alt="delete icon"/>
                 Edit</div>
             </div>

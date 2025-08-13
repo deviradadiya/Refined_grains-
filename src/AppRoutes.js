@@ -31,11 +31,11 @@ function AppContent() {
                 <div className="user-profile-page">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-lg-4">
                                 <ProfileSidebar />
                             </div>
-                            <div className="col-md-8">
-                                <div className="pt_74">
+                            <div className="col-lg-8">
+                                <div className="pt_74 profile-content">
                                     <Routes>
                                         <Route path="/my-order" element={<MyOrder />} />
                                         <Route path="/account-setting" element={<AccountSetting />} />

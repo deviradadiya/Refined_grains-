@@ -5,25 +5,25 @@ const ProfileInformation = () => {
       <>
         <div className="main-content">
           <div className="row g-4">
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">Name <span className={'required'}>*</span></label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="Thomas W. Holmes" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">Mobile No <span className={'required'}>*</span></label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="000-000-0000" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">Pin code <span className={'required'}>*</span></label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="35624" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">location <span className={'required'}>*</span></label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="Syracuse" />
@@ -36,13 +36,13 @@ const ProfileInformation = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">City/District/Town <span className={'required'}>*</span></label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="Syracuse" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">State <span className={'required'}>*</span></label>
                 <select className={'form-control'} name="" id="">
@@ -54,14 +54,14 @@ const ProfileInformation = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">Landmark (Optional)</label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="" />
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className={'form-input'}>
                 <label htmlFor="inputPassword2" className="form-label text-uppercase">Alternate Phone (Optional)</label>
                 <input type="text" className="form-control" id="inputPassword2" placeholder="" />

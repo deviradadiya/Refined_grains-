@@ -99,7 +99,7 @@ const ProfileSidebar = () => {
             </li>
           </ul>
 
-          <div className="logout-btn pt_104">
+          <div className="logout-btn mt-auto pt-5">
             <img src={logout} alt="My Orders"/>
             <a href="#" className="pl_28 fs_18 fw_700 fw-bold">
               LOGOUT

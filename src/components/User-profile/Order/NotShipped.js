@@ -6,8 +6,10 @@ const NotShipped = () => {
   return (
       <>
         <div className="main-content">
-          <div className="d-flex align-items-center justify-content-between mb_28">
-            <h2 className="mb-0 fw_600 fs_24 lh-1">Your Orders</h2>
+          <div className="d-flex align-items-center justify-content-between mb_28 order-content-box">
+            <div>
+              <h2 className="mb-0 fw_600 fs_24 lh-1">Your Orders</h2>
+            </div>
             <div className={'form-input search-field'}>
               <input type="text" className="form-control" id="search" placeholder="Search Your Order" />
               <img src={search} alt="Search" className="search-icon"/>
