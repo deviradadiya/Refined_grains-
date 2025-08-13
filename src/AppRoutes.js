@@ -10,7 +10,6 @@ import AboutUs from "./components/About-us/AboutUs";
 import Shop from "./components/Shop/Shop";
 import Contact from "./components/Contact us/Contact";
 import CustomiseWheat from "./components/Customise-wheat/CustomiseWheat";
-import Userprofile from "./components/User-profile/Userprofile";
 import AccountSetting from "./components/User-profile/AccountSetting/AccountSetting";
 import ProfileSidebar from "./components/User-profile/ProfileSidebar";
 import MyOrder from "./components/User-profile/Order/MyOrder";
@@ -63,7 +62,6 @@ function AppContent() {
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/customize-wheat" element={<CustomiseWheat />} />
-                    <Route path="/user-profile" element={<Userprofile />} />
                 </Routes>
             </div>
             <Footer />
