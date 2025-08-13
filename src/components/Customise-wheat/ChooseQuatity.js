@@ -89,6 +89,11 @@ const ChooseQuantity = () => {
                                               </div>
                                           </a>
                                       </li>
+
+                                      <li className={'other-quantity'}>
+                                          <input type="text" className={'form-control'} placeholder={'Add Qty'} />
+                                          <h6 className={'fs_12 fw_700 mb-0'}>Other Quantity</h6>
+                                      </li>
                                   </ul>
                               </div>
                           </div>

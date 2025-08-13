@@ -40,7 +40,7 @@ const Cart = () => {
                       </div>
 
                       <div className={'d-flex align-items-center gap-2 cart-total'}>
-                          <p className={'fs_20 fw_700 text-black'}>₹ 168</p>
+                          <p className={'fs_20 fw_700 text-black text-no-wrap'}>₹ 168</p>
 
                           <div className={'d-flex align-items-center gap-3'}>
                               <div className={'action d-flex align-items-center justify-content-center'}>
@@ -80,7 +80,7 @@ const Cart = () => {
                       </div>
 
                       <div className={'d-flex align-items-center gap-2 cart-total'}>
-                          <p className={'fs_20 fw_700 text-black'}>₹ 168</p>
+                          <p className={'fs_20 fw_700 text-black text-no-wrap'}>₹ 168</p>
 
                           <div className={'d-flex align-items-center gap-3'}>
                               <div className={'action d-flex align-items-center justify-content-center'}>

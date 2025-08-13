@@ -24,13 +24,13 @@ const OurProductCarousel = () => {
                   320: {
                       slidesPerView: 1.5,
                   },
-                  640: {
+                  676: {
                       slidesPerView: 2.5,
                   },
                   991: {
                       slidesPerView: 3.5,
                   },
-                  1024: {
+                  1366: {
                       slidesPerView: 4.5,
                   },
               }}

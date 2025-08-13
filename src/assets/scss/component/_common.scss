@@ -10,6 +10,10 @@ body {
   background-color: $theme-primary;
 }
 
+.container {
+  max-width: 1314px;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -130,6 +134,10 @@ img {
 
 .lh-2 {
   line-height: 2;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
 }
 
 .section-title {
@@ -297,7 +305,7 @@ img {
     &:before {
       position: absolute;
       content: "";
-      height: 100%;
+      height: calc(100% - 90px);
       width: 68px;
       background-repeat: no-repeat;
       left: 50%;
@@ -322,6 +330,7 @@ img {
       &:before {
         top: 80px;
         background-image: url("../../svg/how-work-3.svg");
+        background-position: bottom;
       }
     }
   }
@@ -499,6 +508,7 @@ img {
 // Our happy Client section
 .our-happy-client {
   background-color: $light-coffee;
+  overflow: hidden;
 
   .our-client-box {
     background-color: $theme-primary;
@@ -517,6 +527,20 @@ img {
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .swiper {
+    overflow: unset;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: -105px;
+    }
+
+    .swiper-button-prev {
+      left: unset;
+      right: 80px;
     }
   }
 }
@@ -653,7 +677,7 @@ img {
 
     .button {
       width: 153px;
-      padding: 20px 30px;
+      padding: 16px 30px;
       font-size: 16px;
 
       &.btn-border {
@@ -803,6 +827,33 @@ img {
           letter-spacing: 0;
           color: $black-40;
           margin: 0;
+        }
+
+        &:active {
+          background-color: transparent;
+        }
+      }
+
+      &.other-quantity {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        .form-control {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 100%;
+          letter-spacing: 0;
+          color: $black-40;
+          padding: 4px;
+          border: 1px solid rgba($coffee, 0.3);
+          background-color: $theme-primary;
+          max-width: 94px;
+          border-radius: 0;
+
+          &:placeholder {
+            color: rgba($black-40, 0.4);
+          }
         }
       }
 
@@ -1193,5 +1244,22 @@ img {
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+.product-slider {
+  position: relative;
+
+  .swiper {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 140px;
+      height: 100%;
+      background: linear-gradient(110.06deg, rgba($theme-primary, 0.17) 29.75%, $theme-primary 87.87%);
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
   }
 }
