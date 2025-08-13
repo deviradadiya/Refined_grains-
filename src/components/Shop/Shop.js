@@ -9,10 +9,10 @@ const Shop = () => {
           <div className="shop-page">
               <div className="container">
                   <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-xl-3">
                           <Sidebar />
 
-                          <div className="shop-filter d-md-nonr">
+                          <div className="shop-filter d-xl-none">
                               <button className={'button btn-solid'}>Sort
                                   <img className={'img-fluid'} src={FilterIcon} alt=""/>
                               </button>
@@ -30,7 +30,7 @@ const Shop = () => {
                           </div>
                       </div>
 
-                      <div className={'col-md-9'}>
+                      <div className={'col-xl-9'}>
                         <div className="row g-4">
                             <div className="col-12">
                                 <div className="section-title pt_42">
@@ -38,14 +38,13 @@ const Shop = () => {
                                     <p>Select Customise, and convert with precision.</p>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
-                            <div className="col-xl-4 col-md-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
+                            <div className="col-md-4 col-sm-6"><OurProduct /></div>
                         </div>
                       </div>
                   </div>

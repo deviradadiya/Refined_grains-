@@ -124,6 +124,22 @@ const CustomiseSidebar = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="content out-side">
+                                        <div>
+                                            <h5 className={'mb-0 fs_16 fw_500 text-color'}>Transaction Date</h5>
+                                            <h5 className={'mb-0 fs_16 fw_600 text-color'}>Tuesday, 13 June 2023</h5>
+                                        </div>
+
+                                        <div>
+                                            <h5 className={'mb-0 fs_16 fw_500 text-color'}>Payment Method</h5>
+                                            <h5 className={'mb-0 fs_16 fw_600 text-color'}>Mastercasrd ending</h5>
+                                        </div>
+
+                                        <div>
+                                            <h5 className={'mb-0 fs_16 fw_500 text-color'}>Subtotal</h5>
+                                            <h5 className={'mb-0 fs_16 fw_600 text-color'}>168 ₹</h5>
+                                        </div>
+                                    </div>
                                     <div className={'text-center'}>
                                         <button className={'fs_16 fw_400 button btn-solid text-uppercase py_20 px_30'}>Track Your Order</button>
                                     </div>
