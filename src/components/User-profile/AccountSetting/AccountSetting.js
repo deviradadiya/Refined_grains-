@@ -1,44 +1,42 @@
-import React, {useState} from "react";
-import Order from "../Order/Order";
+import React, { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import ProfileInformation from "./ProfileInformation";
 import ManageAddress from "./ManageAddress";
 
 const AccountSetting = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const tabFromURL = searchParams.get('tab') || 'profile-info';
 
-  const [activeTab, setActiveTab] = useState('profile-info');
+    const tabs = [
+        { id: 'profile-info', label: 'Profile Information' },
+        { id: 'manage-address', label: 'Manage Address' },
+    ];
 
-  const tabs = [
-    { id: 'profile-info', label: 'profile Information'},
-    { id: 'manage-address', label: 'Manage Address'},
-  ];
+    // Whenever tab changes, update the URL
+    const handleTabChange = (tabId) => {
+        setSearchParams({ tab: tabId });
+    };
 
-  return (
-      <>
+    return (
         <div className="order-page">
-          <div className="profile-tabs-button">
-            {tabs.map((tab) => (
-                <button key={tab.id}
-                        className={activeTab === tab.id ? 'active' : ''}
-                        onClick={() => setActiveTab(tab.id)}
-                >
-                  {tab.label}
-                </button>
-            ))}
-          </div>
+            <div className="profile-tabs-button">
+                {tabs.map((tab) => (
+                    <button
+                        key={tab.id}
+                        className={tabFromURL === tab.id ? 'active' : ''}
+                        onClick={() => handleTabChange(tab.id)}
+                    >
+                        {tab.label}
+                    </button>
+                ))}
+            </div>
 
-          <div className="tab-content">
-            {activeTab === 'profile-info' && (
-                <ProfileInformation />
-            )}
-            {activeTab === 'manage-address' && (
-                <ManageAddress />
-            )}
-          </div>
+            <div className="tab-content">
+                {tabFromURL === 'profile-info' && <ProfileInformation />}
+                {tabFromURL === 'manage-address' && <ManageAddress />}
+            </div>
         </div>
-
-      </>
-
-  );
+    );
 };
 
 export default AccountSetting;

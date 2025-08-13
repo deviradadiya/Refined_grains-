@@ -1,22 +1,13 @@
 import React from "react";
-import profile from "../../assets/images/profile.jpg";
 import thomas from "../../assets/images/Thomas.png";
-import arrow from "../../assets/svg/arrow.svg";
-import pside from "../../assets/svg/pside.svg";
-import Payments from "../../assets/svg/payment.svg";
-import Stuff from "../../assets/svg/stuff.svg";
 import logout from "../../assets/svg/logout-btn.svg";
-import orderbox from "../../assets/svg/orderbox.svg";
-// import grainsuserp from "../../assets/images/grainsusrp .png";
-import search from "../../assets/svg/search.svg";
-import review from "../../assets/svg/review.svg";
 import {Link, NavLink} from "react-router-dom";
 
 const ProfileSidebar = () => {
 
   const AccountSetting = [
-    { name: "profile Information", path: "/account-setting" },
-    { name: "manage Address", path: "/account-setting" },
+    { name: "profile Information", path: "/" },
+    { name: "manage Address", path: "/" },
   ];
 
   const MyStuff = [
@@ -43,7 +34,7 @@ const ProfileSidebar = () => {
 
           <ul className={'ps-0 m-0 sidebar-nav'}>
             <li>
-              <NavLink className="nav-link" to={"/order"}>
+              <NavLink className="nav-link" to={"/my-order"}>
                 <svg width="26" height="26" viewBox="0 0 26 26" stroke="#2C2C2C" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
                     <rect x="0.5" y="0.5" width="25" height="25" />
@@ -55,7 +46,7 @@ const ProfileSidebar = () => {
             </li>
 
             <li>
-              <NavLink className="nav-link" to={'account-setting'}>
+              <NavLink className="nav-link" to={'/account-setting'}>
                 <svg width="28" height="28" viewBox="0 0 28 28" stroke="#2C2C2C" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 14.125C1 15.8486 1.33949 17.5553 1.99908 19.1477C2.65867 20.7401 3.62545 22.187 4.84422 23.4058C6.06299 24.6245 7.50988 25.5913 9.10228 26.2509C10.6947 26.9105 12.4014 27.25 14.125 27.25C15.8486 27.25 17.5553 26.9105 19.1477 26.2509C20.7401 25.5913 22.187 24.6245 23.4058 23.4058C24.6245 22.187 25.5913 20.7401 26.2509 19.1477C26.9105 17.5553 27.25 15.8486 27.25 14.125C27.25 12.4014 26.9105 10.6947 26.2509 9.10228C25.5913 7.50988 24.6245 6.06299 23.4058 4.84422C22.187 3.62545 20.7401 2.65867 19.1477 1.99908C17.5553 1.33949 15.8486 1 14.125 1C12.4014 1 10.6947 1.33949 9.10228 1.99908C7.50988 2.65867 6.06299 3.62545 4.84422 4.84422C3.62545 6.06299 2.65867 7.50988 1.99908 9.10228C1.33949 10.6947 1 12.4014 1 14.125Z" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M9.75 11.208C9.75 12.3683 10.2109 13.4811 11.0314 14.3016C11.8519 15.1221 12.9647 15.583 14.125 15.583C15.2853 15.583 16.3981 15.1221 17.2186 14.3016C18.0391 13.4811 18.5 12.3683 18.5 11.208C18.5 10.0477 18.0391 8.93489 17.2186 8.11442C16.3981 7.29394 15.2853 6.83301 14.125 6.83301C12.9647 6.83301 11.8519 7.29394 11.0314 8.11442C10.2109 8.93489 9.75 10.0477 9.75 11.208Z" stroke-linecap="round" stroke-linejoin="round"/>
@@ -75,7 +66,7 @@ const ProfileSidebar = () => {
             </li>
 
             <li>
-              <NavLink className="nav-link">
+              <NavLink className="nav-link" to={'/payment'}>
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" stroke="#2C2C2C" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.9583 6.83333V2.45833C19.9583 2.07156 19.8047 1.70063 19.5312 1.42714C19.2577 1.15365 18.8868 1 18.5 1H3.91667C3.14312 1 2.40125 1.30729 1.85427 1.85427C1.30729 2.40125 1 3.14312 1 3.91667M1 3.91667C1 4.69021 1.30729 5.43208 1.85427 5.97906C2.40125 6.52604 3.14312 6.83333 3.91667 6.83333H21.4167C21.8034 6.83333 22.1744 6.98698 22.4479 7.26047C22.7214 7.53396 22.875 7.90489 22.875 8.29167V12.6667M1 3.91667V21.4167C1 22.1902 1.30729 22.9321 1.85427 23.4791C2.40125 24.026 3.14312 24.3333 3.91667 24.3333H21.4167C21.8034 24.3333 22.1744 24.1797 22.4479 23.9062C22.7214 23.6327 22.875 23.2618 22.875 22.875V18.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M24.334 12.667V18.5003H18.5007C17.7271 18.5003 16.9852 18.193 16.4383 17.6461C15.8913 17.0991 15.584 16.3572 15.584 15.5837C15.584 14.8101 15.8913 14.0682 16.4383 13.5213C16.9852 12.9743 17.7271 12.667 18.5007 12.667H24.334Z" stroke-linecap="round" stroke-linejoin="round"/>
@@ -85,7 +76,7 @@ const ProfileSidebar = () => {
             </li>
 
             <li>
-              <NavLink className="nav-link">
+              <NavLink className="nav-link" to={'/my-stuff'}>
                 <svg width="28" height="23" viewBox="0 0 28 23" stroke="#2C2C2C" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 22.0504C2.99525 20.8984 5.25858 20.292 7.5625 20.292C9.86642 20.292 12.1297 20.8984 14.125 22.0504C16.1203 20.8984 18.3836 20.292 20.6875 20.292C22.9914 20.292 25.2547 20.8984 27.25 22.0504" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M1 3.09142C2.99525 1.93947 5.25858 1.33301 7.5625 1.33301C9.86642 1.33301 12.1297 1.93947 14.125 3.09142C16.1203 1.93947 18.3836 1.33301 20.6875 1.33301C22.9914 1.33301 25.2547 1.93947 27.25 3.09142" stroke-linecap="round" stroke-linejoin="round"/>
