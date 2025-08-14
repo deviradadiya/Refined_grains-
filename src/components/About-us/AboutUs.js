@@ -7,6 +7,7 @@ import Team1Image from "../../assets/images/team-1.png";
 import Team2Image from "../../assets/images/team-2.png";
 import Team3Image from "../../assets/images/team-3.png";
 import Team4Image from "../../assets/images/team-4.png";
+import OurTeamCarousel from "./OurTeamCarousel";
 
 const AboutUs = () => {
   return (
@@ -14,9 +15,9 @@ const AboutUs = () => {
           <div className="about-us pb_100 pt_100">
               <div className="container">
                   <div className="row align-items-center">
-                      <div className="col-md-6">
+                      <div className="col-lg-6">
                           <div className="about-content">
-                              <h5 className={'fs_40 fw_700 mb_10 text-color'}>AboutUs</h5>
+                              <h5 className={'fs_40 fw_700 mb_10 text-color'}>About Us</h5>
                               <h6 className={'fs_20 fw_600 mb_20 text-color'}>From Grain to Greatness — Naturally</h6>
                               <p className={'fs_20 fw_400 mb_18 text-color lh-1-5'}>
                                   At Wholesome Flour, we believe that the journey from wheat to flour should be as pure, honest, and nourishing as the final product itself. Our mission is simple — to help you transform your own wheat into fresh, stone-ground, preservative-free flour that's packed with nutrients and full of flavor.
@@ -32,7 +33,7 @@ const AboutUs = () => {
                               </button>
                           </div>
                       </div>
-                      <div className="col-md-6">
+                      <div className="col-lg-6">
                           <div className="img-wrapper text-end">
                               <img src={AboutUsImage} alt="about us image"/>
                           </div>
@@ -44,13 +45,13 @@ const AboutUs = () => {
           <div className="why-choose-us text-start">
               <div className="container">
                   <div className="row">
-                      <div className="col-md-5">
+                      <div className="col-md-5 order-lg-1 order-2">
                           <div className="img-wrapper">
                               <img src={WhyChooseImage} alt="Why Choose Image"/>
                           </div>
                       </div>
 
-                      <div className="col-md-7">
+                      <div className="col-md-7 order-lg-2">
                           <div className="why-chose-us-content ms-auto text-start">
                               <h5 className={'fs_40 fw_700 text-color mb_20'}>Why Choose Us?</h5>
 
@@ -97,7 +98,7 @@ const AboutUs = () => {
                       </div>
 
                       <div className="col-12">
-                          <div className="content text-center mt_48">
+                          <div className="content text-lg-center mt_48 pb-0">
                               <h5 className={'fs_40 fw_700 mb_20 text-white text-capitalize'}>Let’s Bring Back the Taste of Tradition.</h5>
                               <p className={'fs_20 fw_400 mb-0 lh-1-5 text-white text-capitalize'}>We promise integrity in every grain. What you bring is what you get — milled with care, packed wWhether you're rediscovering ancestral wisdom or making a modern shift toward clean eating — Wholesome Flour is your trusted partner in every step.ith love.</p>
                           </div>
@@ -116,53 +117,8 @@ const AboutUs = () => {
                           </div>
                       </div>
 
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team1Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Shannon</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team2Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Nathalie</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team3Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>James</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Make-up artist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team4Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Madelyn</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
+                      <div className="col-12">
+                          <OurTeamCarousel />
                       </div>
                   </div>
               </div>

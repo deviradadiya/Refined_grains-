@@ -37,7 +37,14 @@ const Login = () => {
       </div>
 
       <button className="submit-btn pt_70">
-        <Link to="/Verify" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link
+          to="/Verify"
+          style={{
+            textDecoration: "none",
+            textTransform: "uppercase",
+            color: "inherit",
+          }}
+        >
           continue
         </Link>
         <span className="arrow">➜</span>

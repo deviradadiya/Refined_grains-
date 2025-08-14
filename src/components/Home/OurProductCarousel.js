@@ -22,13 +22,16 @@ const OurProductCarousel = () => {
               loop={true}
               breakpoints={{
                   320: {
-                      slidesPerView: 1,
+                      slidesPerView: 1.5,
                   },
-                  640: {
-                      slidesPerView: 2,
+                  676: {
+                      slidesPerView: 2.5,
                   },
-                  1024: {
-                      slidesPerView: 5,
+                  991: {
+                      slidesPerView: 3.5,
+                  },
+                  1366: {
+                      slidesPerView: 4.5,
                   },
               }}
           >

@@ -16,7 +16,7 @@ const GrindingTexture = () => {
               <div className="choose-your-grinding">
                   <div className="row">
                       <div className="col-12">
-                          <h5 className={'fs_24 fw_700 lh-2 mb_20 title'}>Chose Grinding Texture</h5>
+                          <h5 className={'fs_24 fw_700 lh-2 mb_20 title text-capitalize'}>Chose Grinding Texture</h5>
                       </div>
                       <div className="col-lg-4">
                           <div className="form-check custom-radio">
@@ -42,7 +42,7 @@ const GrindingTexture = () => {
 
                   <div className="row">
                       <div className="col-12">
-                          <h5 className={'fs_24 fw_700 lh-2 mb_20 mt-5 text-color'}>choose Packaging </h5>
+                          <h5 className={'fs_24 fw_700 lh-2 mb_20 mt-xl-5 text-color text-capitalize'}>choose Packaging </h5>
                       </div>
                       <div className="col-lg-4">
                           <div className="form-check custom-radio">

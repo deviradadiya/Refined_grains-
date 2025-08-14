@@ -1,12 +1,25 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import FilterIcon from "../../assets/svg/filter.svg";
 
 const Sidebar = () => {
   return (
     <>
-      <div className="sidebar h-100">
-        <div className="sidebar-content">
+      <div className="sidebar navbar-expand-xl">
+        <button
+            className="navbar-toggler button btn-solid"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sidebarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+          Sort
+          <img className={'img-fluid'} src={FilterIcon} alt=""/>
+        </button>
+        <div className="sidebar-content collapse navbar-collapse" id="sidebarNav">
           <div>
             <h6 className={'fw_16 fw_600 mb_18 text-color'}>Wheat Type</h6>
 
