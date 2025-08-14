@@ -18,39 +18,11 @@ import MyStuff from "./components/User-profile/MyStuff/MyStuff";
 
 import "./assets/scss/style.scss";
 
-<<<<<<< HEAD
-function AppLayout() {
-  return (
-    <div className={"main-section"}>
-      <Header />
-      <div className={"app-main-section"}>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/Verify" element={<Verify />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/contact-us" element={<Contact />} />
-          <Route path="/customize-wheat" element={<CustomiseWheat />} />
-          <Route path="/user-profile" element={<Userprofile />} />
-          <Route path="/user-profilebyagain" element={<UserprofileByAgain />} />
-          <Route
-            path="/user-profilenotshipped"
-            element={<UserprofileNotshipped />}
-          />
-          <Route path="/usercancleorder" element={<UsercancleOeder />} />
-          <Route path="/userprofileinfo" element={<UserprofileInfo />} />
-          <Route path="/usermanageaddress" element={<UsermanageAddress />} />
-          <Route path="/userCards" element={<UserCards />} />
-        </Routes>
-      </div>
-=======
-// ⬇️ Layout Wrapper using conditional rendering
+
 function AppContent() {
     const location = useLocation();
     const profileRoutes = ["/my-order", "/account-setting", "/payment", "/my-stuff"];
     const isProfileRoute = profileRoutes.includes(location.pathname);
->>>>>>> 3a7c97fccfd25cf97b16ed29d1c1860a678b0184
 
     return isProfileRoute ? (
         <div className="main-section">
@@ -85,7 +57,7 @@ function AppContent() {
                 <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/verify" element={<Verify />} />
-                    <Route path="/home" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/contact-us" element={<Contact />} />

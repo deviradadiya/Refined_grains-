@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   const HeaderMenu = [
-    { name: "Home", path: "/home" },
+    { name: "Home", path: "/" },
     { name: "Shop", path: "/shop" },
     { name: "Customise Wheat", path: "/customize-wheat" },
     { name: "About Us", path: "/about-us" },
@@ -55,7 +55,7 @@ const Header = () => {
               >
                 <span className="navbar-toggler-icon" />
               </button>
-              <Link className="navbar-brand" to={"/home"}>
+              <Link className="navbar-brand" to={"/"}>
                 <img src={logo} alt="Refined Grains" className="logo img-fluid" />
               </Link>
             </div>

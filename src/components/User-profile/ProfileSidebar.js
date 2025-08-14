@@ -1,18 +1,18 @@
 import React from "react";
 import thomas from "../../assets/images/Thomas.png";
 import logout from "../../assets/svg/logout-btn.svg";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const ProfileSidebar = () => {
 
   const AccountSetting = [
-    { name: "profile Information", path: "/" },
-    { name: "manage Address", path: "/" },
+    { name: "profile Information", path: "/account-setting" },
+    { name: "manage Address", path: "/account-setting?tab=manage-address" },
   ];
 
   const MyStuff = [
-    { name: "my Reviews", path: "" },
-    { name: "my Favourite", path: "" },
+    { name: "my Reviews", path: "my-stuff" },
+    { name: "my Favourite", path: "my-stuff?tab=favourites" },
   ];
 
 
