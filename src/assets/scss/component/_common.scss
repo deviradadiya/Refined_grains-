@@ -1166,86 +1166,7 @@ img {
     text-decoration: underline;
   }
 }
-//Login page
-.login-container {
-  /* coffee light background */
-  padding: 30px;
-  border-radius: 40px;
-  color: $coffee;
-  width: 539px;
-  max-width: 90%;
-  height: 650px;
-  background-color: $light-coffee;
-  .header {
-    .logo {
-      height: 59px;
-      width: 89px;
-    }
 
-<<<<<<< HEAD
-    .signup-link a {
-      color: $coffee;
-      text-decoration: none;
-    }
-  }
-  .label {
-    color: $coffee;
-  }
-  .mobile-input-wrapper {
-    display: flex;
-    width: 385px;
-    height: 37px;
-
-    align-items: center;
-    gap: 15px; /* space between +91 and input */
-    .country-code-box {
-      width: 65px; /* fixed underline width */
-      border-bottom: 2px solid $coffee;
-      margin-right: 36px;
-      color: $coffee;
-      text-align: left;
-    }
-    .mobile-number-input {
-      flex: 1;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid $coffee; /* underline for input */
-      /* fixed underline width */
-      border-bottom: 2px solid $coffee;
-      width: 275px;
-      color: $coffee;
-      background-color: transparent; /* removes background color */
-    }
-    .mobile-number-input::placeholder {
-      color: $coffee;
-    }
-  }
-
-  .submit-btn {
-    background-color: #a86b3a;
-    color: white;
-    width: 241px;
-    padding: 26px 52px 25px;
-    border: none;
-    cursor: pointer;
-
-    margin: 0 auto; /* poore button ko horizontally center karega */
-    width: fit-content; /* sirf content ke hisab se width lega */
-  }
-}
-
-.custom-modal {
-  background-color: blue($color: #000000);
-
-  background: transparent;
-}
-#loginModal.modal {
-  background-color: rgba(255, 215, 181, 0.3); /* Light red-transparent */
-}
-
-#loginModal .modal-dialog {
-  max-width: 500px; /* Modal width */
-=======
 .address-list {
   .list-grid {
     background-color: $light-coffee;
@@ -1350,5 +1271,4 @@ img {
       z-index: 2;
     }
   }
->>>>>>> 3a7c97fccfd25cf97b16ed29d1c1860a678b0184
 }
