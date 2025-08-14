@@ -1272,3 +1272,61 @@ img {
     }
   }
 }
+
+
+.modal {
+  background-color: rgba($coffee, 0.4);
+
+  .modal-content {
+    border-radius: 40px;
+    background-color: $theme-primary;
+    border: 0;
+  }
+}
+
+.login {
+  padding: 25px 44px;
+
+  .login-header {
+    p {
+      max-width: 105px;
+
+      a {
+        color: $coffee;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .login-body {
+      color: $coffee;
+
+    .mobile-input-wrapper {
+      .country-code-box {
+        border-bottom: 2px solid $coffee;
+        width: 78px;
+        padding-bottom: 1px;
+      }
+
+      .mobile-number-input {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+        color: $section-title;
+        padding: 0 0 16px 0;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: $coffee;
+        background-color: transparent;
+        max-width: 272px;
+        width: 100%;
+      }
+    }
+
+    .btn-solid {
+      padding: 26px 51px;
+    }
+
+  }
+}
