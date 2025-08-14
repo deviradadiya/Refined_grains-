@@ -442,6 +442,11 @@ img {
       }
     }
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 //Slider UI
@@ -1234,7 +1239,7 @@ img {
 
 .shop-filter {
   background-color: $white-8;
-  padding: 29px 15px;
+  padding: 0 15px 29px 15px;
 
   > div {
     padding: 15px;

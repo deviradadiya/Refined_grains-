@@ -13,10 +13,6 @@ const Shop = () => {
                           <Sidebar />
 
                           <div className="shop-filter d-xl-none">
-                              <button className={'button btn-solid'}>Sort
-                                  <img className={'img-fluid'} src={FilterIcon} alt=""/>
-                              </button>
-
                               <div className={'d-flex align-items-center flex-wrap'}>
                                   <div className="form-check custom-radio mr_22">
                                       <input className="form-check-input" type="radio" id="yes" checked />

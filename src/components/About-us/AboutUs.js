@@ -7,6 +7,7 @@ import Team1Image from "../../assets/images/team-1.png";
 import Team2Image from "../../assets/images/team-2.png";
 import Team3Image from "../../assets/images/team-3.png";
 import Team4Image from "../../assets/images/team-4.png";
+import OurTeamCarousel from "./OurTeamCarousel";
 
 const AboutUs = () => {
   return (
@@ -116,53 +117,8 @@ const AboutUs = () => {
                           </div>
                       </div>
 
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team1Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Shannon</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team2Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Nathalie</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team3Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>James</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Make-up artist</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="col-md-3">
-                          <div className="team-box">
-                              <div className="img-wrapper">
-                                  <img src={Team4Image} alt="team Image 1"/>
-                              </div>
-
-                              <div className="content">
-                                  <h5 className={'fs_24 lh-1 fw_600 mb_10 text-color'}>Madelyn</h5>
-                                  <p className={'fs_16 lh-1 fw_400 mb_10 text-color'}>Senior Stylist</p>
-                              </div>
-                          </div>
+                      <div className="col-12">
+                          <OurTeamCarousel />
                       </div>
                   </div>
               </div>
