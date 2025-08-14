@@ -24,7 +24,7 @@ function AppLayout() {
       <div className={"app-main-section"}>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/verify" element={<Verify />} />
+          <Route path="/Verify" element={<Verify />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/shop" element={<Shop />} />

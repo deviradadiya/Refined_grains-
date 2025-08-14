@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/images/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import profile from "../../assets/images/profile.jpg";
+import Login from "../Login/Login"; // <-- Import your Login component
 
 const Header = () => {
   const HeaderMenu = [
@@ -16,7 +17,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg p-0 position-fixed w-100 z-3">
         <div className="container">
-          <div className={"nav-background"}>
+          <div className="nav-background">
             <Link className="navbar-brand" to={"/home"}>
               <img src={logo} alt="Refined Grains" className="logo img-fluid" />
             </Link>
@@ -37,29 +38,48 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 {HeaderMenu.map((item, idx) => (
-                  <li className={"nav-item"}>
-                    <NavLink key={idx} to={item.path} className="nav-link">
+                  <li className="nav-item" key={idx}>
+                    <NavLink to={item.path} className="nav-link">
                       {item.name}
                     </NavLink>
                   </li>
                 ))}
               </ul>
-              {/* Login Button */}
-              <button className="login-btn">
-                <Link
-                  to="/login"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  LOGIN
-                </Link>
+
+              {/* LOGIN Button - opens modal */}
+              <button
+                className="login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                LOGIN
               </button>
-              <div className={"profile-img pl_14"}>
-                <img src={profile} alt="user_profile" className={"user-img"} />
+
+              <div className="profile-img pl_14">
+                <img src={profile} alt="user_profile" className="user-img" />
               </div>
             </div>
           </div>
         </div>
       </nav>
+
+      {/* Bootstrap Modal for Login */}
+      <div
+        className="modal fade"
+        id="loginModal"
+        tabIndex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="">
+            <div className="modal-header border-0"></div>
+            <div className="modal-body">
+              <Login />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
