@@ -22,6 +22,7 @@ import UserPayment from "./components/User-profile/Payment/UserPayment";
 import MyStuff from "./components/User-profile/MyStuff/MyStuff";
 import Blog from "./components/Blog/Blog";
 import "./assets/scss/style.scss";
+import Blogdetails from "./components/Blog/Blogdetails";
 
 function AppContent() {
   const location = useLocation();
@@ -75,6 +76,7 @@ function AppContent() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/customize-wheat" element={<CustomiseWheat />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogdetails" element={<Blogdetails />} />
         </Routes>
       </div>
       <Footer />

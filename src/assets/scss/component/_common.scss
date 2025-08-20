@@ -1421,3 +1421,57 @@ img {
     }
   }
 }
+
+//Blog details
+
+.blog-container {
+  max-width: 1300px;
+  margin: auto;
+  .back-btn {
+    color: $section-title;
+  }
+  .category-Ai {
+    padding: 18px 32px;
+    background: $light-coffee;
+    color: $section-title;
+    border-radius: 100px;
+  }
+  .author {
+    color: $section-title;
+  }
+  .blog-img img {
+    width: 100%;
+  }
+  .blog-sub-content {
+    .blog-content {
+      display: flex;
+      height: 1737px;
+      .box {
+        width: 30%;
+        padding: 100px 30px;
+        border: none;
+
+        background-color: $light-coffee;
+        .content-box {
+          border-left: 1px solid $border-gray;
+
+          .list-item {
+            color: $section-title;
+          }
+        }
+        .icons {
+          display: flex;
+          gap: 18px;
+          img {
+            width: 50px;
+            height: 60px;
+          }
+        }
+      }
+      .right-bar {
+        width: 70%;
+        padding: 100px 40px;
+      }
+    }
+  }
+}

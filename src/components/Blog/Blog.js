@@ -12,6 +12,7 @@ import artifical from "../../assets/images/artifical.png";
 import dataanalitics from "../../assets/images/dataanalitics.png";
 import webdevelopment from "../../assets/images/webdevelopment.png";
 import ArrowRightIcon from "../../assets/svg/arrow-right-white.svg";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -21,7 +22,9 @@ const Blog = () => {
         <div className="news-container">
           {/* Left Main News */}
           <div className="main-news ">
-            <img src={disnews} alt="AI" />
+            <Link to="/blogdetails">
+              <img src={disnews} alt="AI" />
+            </Link>
             <div className="main-news-content pt_40  fw_600">
               <h3 className="fs_20 fw_600">Artificial Intelligence</h3>
               <h2 className="main-news-para fs_24 fw_700 pt_30">
@@ -84,7 +87,7 @@ const Blog = () => {
 
       <div className="container pt_100">
         {/* Heading */}
-        <div className="">
+        <div>
           <h2 className="page-title   text-center fw_700   fs_40">
             Insights, Innovations, and IT Trends That <br /> Power the Future
           </h2>
